@@ -1,0 +1,86 @@
+User-Agent: *
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: GPTBot
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: ClaudeBot
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: Claude-SearchBot
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: Claude-User
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: Perplexity-User
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-Agent: Bingbot
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+Host: https://chipchoppetshop.com
+Sitemap: https://chipchoppetshop.com/sitemap.xml

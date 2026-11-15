@@ -1,0 +1,28 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/37ecidsjvlsfw.js"
+4:I[39756,["$3"],"default"]
+5:I[37457,["$3"],"default"]
+a:"/_next/static/chunks/3_noovid669cl.js"
+b:"/_next/static/chunks/0317u4y0l45-e.js"
+c:I[68031,["$3","$a","$b"],"PanelClient"]
+d:I[97367,["$3"],"OutletBoundary"]
+e:"$Sreact.suspense"
+11:"ViewportBoundary"
+12:I[97367,["$3"],"$11"]
+13:"MetadataBoundary"
+14:I[97367,["$3"],"$13"]
+15:I[27201,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"wrap","children":[["$","h1",null,{"children":"Panel de pedidos"}],["$","$Lc",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/3_noovid669cl.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0317u4y0l45-e.js","async":true}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":"$@10","v":null,"s":"$8"}}]]
+1:[["children",{"s":"panel","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L12",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#3B688A"}]]}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Panel de pedidos | Chip Chop Pet Shop"}],["$","meta","1",{"name":"description","content":"Panel interno del personal de Chip Chop Pet Shop."}],["$","meta","2",{"name":"application-name","content":"Chip Chop Pet Shop"}],["$","link","3",{"rel":"author","href":"https://chipchoppetshop.com"}],["$","meta","4",{"name":"author","content":"Chip Chop Pet Shop"}],["$","link","5",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","6",{"name":"robots","content":"noindex, nofollow"}],["$","link","7",{"rel":"canonical","href":"https://chipchoppetshop.com/panel/"}],["$","meta","8",{"property":"og:title","content":"Panel de pedidos | Chip Chop Pet Shop"}],["$","meta","9",{"property":"og:description","content":"Panel interno del personal de Chip Chop Pet Shop."}],["$","meta","10",{"property":"og:url","content":"https://chipchoppetshop.com/panel/"}],["$","meta","11",{"property":"og:site_name","content":"Chip Chop Pet Shop"}],["$","meta","12",{"property":"og:locale","content":"es_EC"}],["$","meta","13",{"property":"og:image","content":"https://chipchoppetshop.com/img/og-image.jpg"}],["$","meta","14",{"property":"og:image:width","content":"1200"}],["$","meta","15",{"property":"og:image:height","content":"630"}],["$","meta","16",{"property":"og:image:alt","content":"Chip Chop Pet Shop, pet shop en Quito"}],["$","meta","17",{"property":"og:type","content":"website"}],["$","meta","18",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","19",{"name":"twitter:title","content":"Panel de pedidos | Chip Chop Pet Shop"}],["$","meta","20",{"name":"twitter:description","content":"Panel interno del personal de Chip Chop Pet Shop."}],["$","meta","21",{"name":"twitter:image","content":"https://chipchoppetshop.com/img/og-image.jpg"}],["$","link","22",{"rel":"icon","href":"/favicon.ico?favicon.18_rhpu720icc.ico","sizes":"48x48","type":"image/x-icon"}],["$","link","23",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.2e829j0216uab.png","sizes":"180x180","type":"image/png"}],["$","$L15","24",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@16","v":null,"s":"$8"}},"a":"$@17","u":"$@18","b":"MbK2go_9poR5yFP_3dAgn"}
+f:null
+18:true
+8:300
+8:C
+17:0
+6:"$undefined"
+16:"$undefined"
+10:"$undefined"

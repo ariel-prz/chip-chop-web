@@ -1,0 +1,9 @@
+:HL["/_next/static/chunks/3hisrtrqkbhmi.css","style"]
+:HL["/_next/static/media/bitter_latin_600_normal-s.p.151si_90th90a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/bitter_latin_700_normal-s.p.3i8g57cqnm8e4.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/nunito_sans_latin_400_normal-s.p.3vp5p1xhybych.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/nunito_sans_latin_700_normal-s.p.1h08l092c36eb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/img/isotipo-120.webp","image"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":{"n":"especie","t":"d","k":"perros","s":["carrito","checkout","como-comprar","envios","llms.txt","nosotros","panel","pedido","preguntas-frecuentes","privacidad","productos"]},"h":65600,"c":"$Q2"}]]
+0:{"b":"MbK2go_9poR5yFP_3dAgn","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
