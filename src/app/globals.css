@@ -156,7 +156,7 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; min-hei
 .status.pago_validado { background: #e9f5ee; color: var(--ok); }
 .status.pendiente_pago { background: #fdf0e6; color: var(--alerta); }
 
-.footer-logo { margin-bottom: 1rem; }
+.footer-logo { display: block; margin: 0 auto 1.5rem; }
 .caramelo { background: var(--crema); border-radius: var(--radio); padding: 1.2rem; display: grid; grid-template-columns: 72px 1fr; gap: 1rem; align-items: center; }
 .caramelo img { width: 72px; height: 72px; border-radius: 50%; }
 .caramelo p { margin: 0; color: var(--tinta); }
