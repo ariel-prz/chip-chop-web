@@ -60,7 +60,10 @@ export default function Nosotros() {
         />
       </div>
       <h2>¿Cómo es la tienda por dentro y por fuera?</h2>
-      <p>Estas fotos son del local, tomadas en noviembre de 2026. Nos reconoces por el letrero con Caramelo.</p>
+      <p>
+        Estas fotos son del local, tomadas en noviembre de 2026. En la primera está Ariel, el dueño, en la entrada.
+        Nos reconoces por el letrero con Caramelo.
+      </p>
       <ul className="store-photos four">
         {STORE_PHOTOS.map((p) => (
           <li key={p.file}>

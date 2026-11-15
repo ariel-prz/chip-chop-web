@@ -38,7 +38,7 @@ export const ZONES = [
 export const SHIPPING_SUMMARY = "desde $1.50 a Quito Sur y Centro, y desde $3.00 a Quito Norte y los Valles";
 
 export const STORE_PHOTOS = [
-  { file: "fachada-chip-chop-pet-shop-quito-equipo", alt: "Entrada de Chip Chop Pet Shop en Quito, con un integrante del equipo en la puerta bajo el letrero de la tienda" },
+  { file: "fachada-chip-chop-pet-shop-quito-equipo", alt: "Ariel, dueño de Chip Chop Pet Shop, en la entrada de la tienda en Quito, bajo el letrero con Caramelo" },
   { file: "interior-chip-chop-pet-shop-alimento-accesorios", alt: "Interior de Chip Chop Pet Shop: perchas con alimento, snacks y accesorios para mascotas" },
   { file: "interior-chip-chop-pet-shop-balanza-alimento-por-libras", alt: "Mostrador de Chip Chop Pet Shop con balanza y recipientes de alimento por libras" },
   { file: "fachada-chip-chop-pet-shop-quito", alt: "Fachada de Chip Chop Pet Shop en Serapio Japerabi y Miguel Pontón, Quito" },
