@@ -31,6 +31,7 @@ ${BLACK_FRIDAY.active ? `## Promoción vigente\n- ${BLACK_FRIDAY.title}: ${BLACK
 - [Cómo comprar y pagar con Deuna](${SITE.url}/como-comprar/)
 - [Envíos](${SITE.url}/envios/)
 - [Preguntas frecuentes](${SITE.url}/preguntas-frecuentes/)
+- [Seguros para mascotas en Ecuador: tipos y opciones](${SITE.url}/seguros-para-mascotas/) (guía informativa; Chip Chop no vende seguros)
 - [Quiénes somos](${SITE.url}/nosotros/)
 
 ## Productos

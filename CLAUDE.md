@@ -71,6 +71,14 @@ retengan a la fuerza (nada de pop-ups, contadores falsos ni urgencia inventada).
 - Antes de publicar: `python3 scripts/audit.py out` en 0 y Lighthouse móvil de la portada y del
   catálogo con rendimiento 90+ y LCP < 2.5 s.
 
+## Página de seguros para mascotas (`/seguros-para-mascotas/`)
+
+Página informativa tipo funnel: tipos de seguro, checklist, proveedores y orientación por WhatsApp.
+Chip Chop NO vende seguros ni tiene convenios: la página lo dice arriba y en la FAQ (no quitarlo; en
+Ecuador intermediar seguros requiere licencia). Proveedores solo con fuente verificable; los enlaces a
+sitios oficiales llevan `utm_source=chipchoppetshop` para demostrar tráfico si se negocia un convenio.
+Sin precios en la página: cambian seguido y los medios no siempre están al día.
+
 ## Reglas de contenido
 
 - Nunca inventar precios, cifras, reseñas, años, políticas ni datos de productos. Si falta un dato,

@@ -297,3 +297,22 @@ p.promo-badge { font-size: .9rem; border-radius: 10px; padding: .4rem .7rem; mar
 .to-top:hover { background: var(--azul-hover); }
 .to-top svg { width: 22px; height: 22px; }
 @media (max-width: 760px) { .to-top { bottom: calc(76px + env(safe-area-inset-bottom)); right: .8rem; width: 52px; height: 52px; } }
+
+/* Seguros para mascotas */
+.ins-hero { display: grid; grid-template-columns: auto 1fr; gap: 1.4rem; align-items: start; padding: 1rem 0 .5rem; }
+.ins-hero-icon { width: 76px; height: 76px; color: var(--azul); background: var(--crema); border-radius: 22px; padding: .8rem; }
+.disclosure { display: flex; gap: .7rem; align-items: flex-start; background: var(--crema); border-radius: 14px; padding: 1rem 1.1rem; }
+.disclosure svg { color: var(--azul); flex: none; margin-top: .15rem; }
+.ins-types { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .8rem; }
+.ins-types li { border: 1px solid var(--borde); border-radius: 16px; padding: 1.1rem; background: var(--blanco); }
+.ins-types svg { width: 34px; height: 34px; color: var(--azul); }
+.ins-types h3 { margin: .5rem 0 .3rem; }
+.ins-when { color: var(--cafe); font-weight: 700; margin: 0; }
+.ins-providers { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .8rem; }
+.ins-providers li { border: 1px solid var(--borde); border-radius: 16px; padding: 1.1rem; display: flex; flex-direction: column; background: var(--blanco); }
+.ins-providers h3 { margin-top: 0; }
+.ins-providers .btn { margin-top: auto; align-self: flex-start; }
+.ins-cta { background: var(--tinta); color: var(--blanco); border-radius: 22px; padding: 1.6rem; margin: 2.2rem 0; }
+.ins-cta h2 { color: var(--blanco); margin-top: 0; }
+.ins-cta p { color: var(--crema); max-width: 65ch; }
+@media (max-width: 760px) { .ins-hero { grid-template-columns: 1fr; } .ins-hero-icon { width: 60px; height: 60px; } }

@@ -6,6 +6,7 @@ const NAV = [
   { href: "/productos/", label: "Productos" },
   { href: "/como-comprar/", label: "Cómo comprar" },
   { href: "/envios/", label: "Envíos" },
+  { href: "/seguros-para-mascotas/", label: "Seguros" },
   { href: "/nosotros/", label: "Nosotros" },
   { href: "/preguntas-frecuentes/", label: "Preguntas frecuentes" },
 ];
@@ -80,6 +81,7 @@ export function Footer() {
             <li><Link href="/como-comprar/">Cómo comprar y pagar con Deuna</Link></li>
             <li><Link href="/envios/">Envíos en Quito y los Valles</Link></li>
             <li><Link href="/preguntas-frecuentes/">Preguntas frecuentes</Link></li>
+            <li><Link href="/seguros-para-mascotas/">Seguros para mascotas en Ecuador</Link></li>
           </ul>
         </section>
         <section aria-labelledby="f-info">

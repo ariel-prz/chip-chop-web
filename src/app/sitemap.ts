@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/como-comprar/", 0.7),
     page("/envios/", 0.7),
     page("/preguntas-frecuentes/", 0.7),
+    page("/seguros-para-mascotas/", 0.7),
     page("/nosotros/", 0.6),
     page("/privacidad/", 0.3),
   ];
