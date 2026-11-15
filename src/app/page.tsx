@@ -9,7 +9,7 @@ import { FAQ_GENERAL } from "@/data/faq";
 import { PRODUCTS, productsBySpecies, SPECIES_LABEL, thumbOf, type Species } from "@/data/products";
 import { pageMeta } from "@/lib/meta";
 import { faqSchema } from "@/lib/schema";
-import { SITE, fullAddress, mapsLink, waLink } from "@/lib/site";
+import { SHIPPING_SUMMARY, SITE, STORE_PHOTOS, fullAddress, mapsLink, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Chip Chop Pet Shop | Tienda de mascotas en Quito con envío",
@@ -163,9 +163,9 @@ export default function Home() {
         <section className="section" aria-labelledby="h-envios">
           <h2 id="h-envios">¿Hacen envíos a domicilio en Quito?</h2>
           <p>
-            Sí. Enviamos a Quito Norte, Centro, Sur y a los Valles con un conductor de InDrive o Uber. El costo
-            depende de la distancia a tu sector y te lo confirmamos por WhatsApp antes de despachar. Si prefieres,
-            retiras en el local sin costo.
+            Sí. Enviamos a Quito Norte, Centro, Sur y a los Valles con un conductor de InDrive o Uber. El envío
+            cuesta {SHIPPING_SUMMARY}; el valor exacto te lo confirmamos por WhatsApp antes de despachar. Si
+            prefieres, retiras en el local sin costo.
           </p>
           <p>
             <Link href="/envios/">Ver zonas y condiciones de envío</Link>
@@ -174,6 +174,13 @@ export default function Home() {
 
         <section className="section" aria-labelledby="h-ubicacion">
           <h2 id="h-ubicacion">¿Dónde está la tienda y a qué hora abre?</h2>
+          <ul className="store-photos">
+            {STORE_PHOTOS.slice(0, 2).map((p) => (
+              <li key={p.file}>
+                <img src={`/img/tienda/${p.file}-360.webp`} alt={p.alt} width="400" height="500" loading="lazy" decoding="async" />
+              </li>
+            ))}
+          </ul>
           <div className="visit">
             <a className="visit-card" href={mapsLink} target="_blank" rel="noopener">
               <MapPin aria-hidden="true" />

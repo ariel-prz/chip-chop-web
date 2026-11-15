@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/JsonLd";
 import type { Faq } from "@/data/faq";
 import { pageMeta } from "@/lib/meta";
 import { faqSchema } from "@/lib/schema";
-import { SITE, ZONES, fullAddress, mapsLink, waLink } from "@/lib/site";
+import { SHIPPING_SUMMARY, SITE, ZONES, fullAddress, mapsLink, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Envíos para mascotas en Quito y los Valles | Chip Chop",
@@ -34,9 +34,9 @@ export default function Envios() {
       <Breadcrumbs items={[{ name: "Envíos", path: "/envios/" }]} />
       <h1>Envíos en Quito y los Valles</h1>
       <p>
-        Entregamos en Quito Norte, Centro, Sur y en los Valles con un conductor de InDrive o Uber. El costo del
-        envío se calcula según la distancia entre la tienda y tu sector, y te lo confirmamos por WhatsApp antes
-        de despachar. Retirar en el local no tiene costo.
+        Entregamos en Quito Norte, Centro, Sur y en los Valles con un conductor de InDrive o Uber. El envío cuesta{" "}
+        {SHIPPING_SUMMARY}. El valor exacto depende de tu dirección y te lo confirmamos por WhatsApp antes de
+        despachar. Retirar en el local no tiene costo.
       </p>
 
       <h2>¿A qué sectores envían?</h2>
@@ -44,7 +44,7 @@ export default function Envios() {
         <thead>
           <tr>
             <th scope="col">Zona</th>
-            <th scope="col">Costo del envío</th>
+            <th scope="col">¿Cuánto cuesta?</th>
           </tr>
         </thead>
         <tbody>
@@ -55,7 +55,7 @@ export default function Envios() {
           {ZONES.map((z) => (
             <tr key={z.id}>
               <td>{z.name}</td>
-              <td>Según la tarifa de InDrive o Uber a tu dirección, confirmada por WhatsApp</td>
+              <td>Desde ${z.from.toFixed(2)}, según tu dirección; confirmado por WhatsApp</td>
             </tr>
           ))}
         </tbody>

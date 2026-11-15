@@ -1,4 +1,4 @@
-import { SITE, fullAddress } from "@/lib/site";
+import { GEO, SITE, STORE_PHOTOS, fullAddress } from "@/lib/site";
 import type { Faq } from "@/data/faq";
 import type { Product } from "@/data/products";
 import { BLACK_FRIDAY, promoPrice } from "@/data/promos";
@@ -15,7 +15,11 @@ export function businessSchema() {
     description: SITE.description,
     url: SITE.url,
     logo: `${SITE.url}/img/logo-512.png`,
-    image: `${SITE.url}/img/og-image.jpg`,
+    image: [
+      `${SITE.url}/img/og-image.jpg`,
+      ...STORE_PHOTOS.map((p) => `${SITE.url}/img/tienda/${p.file}-640.webp`),
+    ],
+    geo: { "@type": "GeoCoordinates", latitude: GEO.lat, longitude: GEO.lng },
     telephone: SITE.phoneE164,
     priceRange: "$",
     currenciesAccepted: "USD",

@@ -12,7 +12,7 @@ export const SITE = {
   whatsapp: "593995252457",
   instagram: "https://www.instagram.com/chipchop_uio/",
   instagramHandle: "@chipchop_uio",
-  googleBusiness: "https://share.google/slj0HbwUZjFMcQSMp",
+  googleBusiness: "https://www.google.com/maps?cid=17926873769618128884",
   address: {
     street: "Serapio Japerabi y Miguel Pontón",
     city: "Quito",
@@ -26,12 +26,26 @@ export const SITE = {
   lastUpdated: "2026-11-15",
 };
 
+// Tarifas "desde" confirmadas por Ariel (15 nov 2026). El valor final depende de la dirección
+// y se confirma por WhatsApp antes de despachar.
 export const ZONES = [
-  { id: "norte", name: "Quito Norte" },
-  { id: "centro", name: "Quito Centro" },
-  { id: "sur", name: "Quito Sur" },
-  { id: "valles", name: "Valles (Cumbayá, Tumbaco, Los Chillos)" },
+  { id: "sur", name: "Quito Sur", from: 1.5 },
+  { id: "centro", name: "Quito Centro", from: 1.5 },
+  { id: "norte", name: "Quito Norte", from: 3 },
+  { id: "valles", name: "Valles (Cumbayá, Tumbaco, Los Chillos)", from: 3 },
 ] as const;
+
+export const SHIPPING_SUMMARY = "desde $1.50 a Quito Sur y Centro, y desde $3.00 a Quito Norte y los Valles";
+
+export const STORE_PHOTOS = [
+  { file: "fachada-chip-chop-pet-shop-quito-equipo", alt: "Entrada de Chip Chop Pet Shop en Quito, con un integrante del equipo en la puerta bajo el letrero de la tienda" },
+  { file: "interior-chip-chop-pet-shop-alimento-accesorios", alt: "Interior de Chip Chop Pet Shop: perchas con alimento, snacks y accesorios para mascotas" },
+  { file: "interior-chip-chop-pet-shop-balanza-alimento-por-libras", alt: "Mostrador de Chip Chop Pet Shop con balanza y recipientes de alimento por libras" },
+  { file: "fachada-chip-chop-pet-shop-quito", alt: "Fachada de Chip Chop Pet Shop en Serapio Japerabi y Miguel Pontón, Quito" },
+] as const;
+
+export const GEO = { lat: -0.2565227, lng: -78.5344705 };
+
 
 export function waLink(text: string) {
   return `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text)}`;
@@ -39,6 +53,4 @@ export function waLink(text: string) {
 
 export const fullAddress = `${SITE.address.street}, ${SITE.address.postalCode} ${SITE.address.city}, Ecuador`;
 
-export const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  `${SITE.name} ${SITE.address.street} ${SITE.address.city}`,
-)}`;
+export const mapsLink = SITE.googleBusiness;

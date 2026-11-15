@@ -3,7 +3,7 @@ import { Breadcrumbs } from "@/components/Blocks";
 import { JsonLd } from "@/components/JsonLd";
 import { PRODUCTS } from "@/data/products";
 import { pageMeta } from "@/lib/meta";
-import { SITE, fullAddress, mapsLink, waLink } from "@/lib/site";
+import { SITE, STORE_PHOTOS, fullAddress, mapsLink, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Quiénes somos | Chip Chop Pet Shop, tienda familiar en Quito",
@@ -59,6 +59,24 @@ export default function Nosotros() {
           loading="lazy"
         />
       </div>
+      <h2>¿Cómo es la tienda por dentro y por fuera?</h2>
+      <p>Estas fotos son del local, tomadas en noviembre de 2026. Nos reconoces por el letrero con Caramelo.</p>
+      <ul className="store-photos four">
+        {STORE_PHOTOS.map((p) => (
+          <li key={p.file}>
+            <img
+              src={`/img/tienda/${p.file}-360.webp`}
+              srcSet={`/img/tienda/${p.file}-360.webp 360w, /img/tienda/${p.file}-640.webp 640w`}
+              sizes="(max-width: 760px) 45vw, 250px"
+              alt={p.alt}
+              width="400"
+              height="500"
+              loading="lazy"
+              decoding="async"
+            />
+          </li>
+        ))}
+      </ul>
       <h2>¿Cómo compras con nosotros?</h2>
       <p>
         Puedes venir al local o comprar en línea. En la web armas tu carrito, pagas con Deuna el monto exacto que te

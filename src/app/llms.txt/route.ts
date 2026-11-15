@@ -1,6 +1,6 @@
 import { FAQ_GENERAL } from "@/data/faq";
 import { formatUSD, PRODUCTS } from "@/data/products";
-import { SITE, fullAddress } from "@/lib/site";
+import { SHIPPING_SUMMARY, SITE, fullAddress } from "@/lib/site";
 import { BLACK_FRIDAY } from "@/data/promos";
 
 export const dynamic = "force-static";
@@ -20,7 +20,8 @@ export function GET() {
 - WhatsApp: ${SITE.phoneE164}
 - Instagram: ${SITE.instagram}
 - Pago en línea: Deuna (código QR). Cada pedido tiene un monto único con centavos que identifica el pago.
-- Entrega: retiro en tienda sin costo, o envío con InDrive/Uber a Quito Norte, Centro, Sur y Valles, con costo según el sector, confirmado por WhatsApp.
+- Entrega: retiro en tienda sin costo, o envío con InDrive/Uber ${SHIPPING_SUMMARY}; el valor exacto se confirma por WhatsApp.
+- Mapa: ${SITE.googleBusiness}
 
 ${BLACK_FRIDAY.active ? `## Promoción vigente\n- ${BLACK_FRIDAY.title}: ${BLACK_FRIDAY.pct} % de descuento en todo el alimento seco, hasta el 27 de noviembre de 2026 a las 23:59 (hora de Quito).\n\n` : ""}## Páginas principales
 - [Catálogo con precios](${SITE.url}/productos/)

@@ -93,7 +93,7 @@ export function CheckoutClient() {
           </label>
           <label className="choice">
             <input type="radio" name="delivery" checked={delivery === "envio"} onChange={() => setDelivery("envio")} />
-            Envío a domicilio (costo según sector, se cotiza por WhatsApp)
+            Envío a domicilio (desde $1.50, según sector; se confirma por WhatsApp)
           </label>
         </fieldset>
         {delivery === "envio" && (
@@ -106,7 +106,7 @@ export function CheckoutClient() {
                 </option>
                 {ZONES.map((z) => (
                   <option key={z.id} value={z.id}>
-                    {z.name}
+                    {z.name} (desde ${z.from.toFixed(2)})
                   </option>
                 ))}
               </select>

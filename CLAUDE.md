@@ -75,8 +75,10 @@ retengan a la fuerza (nada de pop-ups, contadores falsos ni urgencia inventada).
 - Imágenes del hero con `srcSet` a medida (logo 320/480; estante de la vitrina `-160.webp`).
 - Los títulos del pie de página no son encabezados (`p.footer-title`), para no ensuciar la jerarquía.
 - El teléfono se muestra en formato local e internacional; zonas de envío siempre "Norte, Centro, Sur y Valles".
-- Pendiente de datos de Ariel: tarifas de envío por zona (AEO 9), reseñas reales y fotos del local
-  (AEO 10), URL canónica de Google Maps para `sameAs` (hoy es un enlace corto share.google).
+- Tarifas de envío "desde" (Sur y Centro $1.50; Norte y Valles $3.00) en `ZONES` y
+  `SHIPPING_SUMMARY` de `src/lib/site.ts`; fotos reales del local en `public/img/tienda/`
+  (`STORE_PHOTOS`); `sameAs`/`hasMap` usan la URL canónica de Google Maps (cid) y hay `geo`.
+- Pendiente de Ariel: reseñas reales de Google para enlazarlas (AEO 10).
 
 ### Diseño sin perder SEO/AEO (no negociable)
 

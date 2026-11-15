@@ -1,4 +1,4 @@
-import { SITE } from "@/lib/site";
+import { SHIPPING_SUMMARY, SITE } from "@/lib/site";
 
 // Preguntas reales de clientes. Cada respuesta: corta, completa y sin relleno.
 // Solo hechos confirmados por el dueño. Si algo cambia, se cambia aquí y se
@@ -29,11 +29,11 @@ export const FAQ_GENERAL: Faq[] = [
   },
   {
     q: "¿Hacen envíos a domicilio en Quito?",
-    a: "Sí. Enviamos a Quito Norte, Centro, Sur y a los Valles con un conductor de InDrive o Uber. El costo depende del sector y lo confirmamos por WhatsApp antes de despachar.",
+    a: `Sí. Enviamos a Quito Norte, Centro, Sur y a los Valles con un conductor de InDrive o Uber, ${SHIPPING_SUMMARY}. El valor exacto lo confirmamos por WhatsApp antes de despachar.`,
   },
   {
     q: "¿Cuánto cuesta el envío?",
-    a: "El envío se cobra aparte según la distancia desde la tienda hasta tu sector, con la tarifa del conductor de InDrive o Uber. Te enviamos el valor por WhatsApp para que lo apruebes antes de salir. Retirar en el local no tiene costo.",
+    a: `El envío cuesta ${SHIPPING_SUMMARY}. El valor exacto depende de tu dirección y de la tarifa del conductor de InDrive o Uber; te lo enviamos por WhatsApp para que lo apruebes antes de despachar. Retirar en el local no tiene costo.`,
   },
   {
     q: "¿Aceptan cambios o devoluciones?",
