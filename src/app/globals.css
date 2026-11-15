@@ -317,3 +317,32 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; min-hei
   .countdowns { flex: 1 1 auto; }
   .bf-btn { flex: 0 0 auto; align-self: end; }
 }
+
+/* Menú desplegable Nosotros */
+.nav-desktop .has-sub { position: relative; }
+.sub summary { list-style: none; cursor: pointer; font-weight: 700; color: var(--tinta); padding: .6rem 0; }
+.sub summary::-webkit-details-marker { display: none; }
+.sub summary::after { content: " ▾"; font-size: .8em; }
+.sub[open] ul { position: absolute; right: 0; top: 2.6rem; background: var(--blanco); border: 1px solid #e3d9c2; border-radius: 12px; padding: .4rem; min-width: 250px; display: grid; gap: 0; box-shadow: 0 10px 30px rgba(9,13,17,.12); z-index: 20; }
+.sub[open] ul a { display: block; padding: .7rem .9rem; }
+.menu-group { padding: .6rem 1rem .2rem; font-size: .8rem; color: var(--cafe); font-weight: 700; }
+.menu li a.menu-sub { padding-left: 1.6rem; }
+
+/* Botón al blog en la portada */
+.tips-cta { display: flex; gap: 1rem; align-items: center; background: var(--crema); border-radius: 20px; padding: 1rem 1.2rem; text-decoration: none; color: var(--tinta); }
+.tips-cta img { width: 72px; height: 72px; border-radius: 50%; flex: none; }
+.tips-cta strong { display: block; font-family: var(--serif); font-size: 1.2rem; }
+.tips-cta-go { margin-left: auto; background: var(--azul); color: var(--blanco); font-weight: 700; padding: .7rem 1.1rem; border-radius: 12px; white-space: nowrap; }
+.tips-cta:hover .tips-cta-go { background: var(--azul-hover); }
+@media (max-width: 560px) { .tips-cta { flex-wrap: wrap; } .tips-cta-go { margin-left: 0; width: 100%; text-align: center; } }
+
+/* Blog */
+.blog-head { display: flex; gap: 1.2rem; align-items: flex-start; margin: .5rem 0 1rem; }
+.blog-head img { width: 96px; height: 96px; border-radius: 50%; flex: none; }
+.blog-list { list-style: none; padding: 0; display: grid; gap: .9rem; }
+.blog-list li { border: 1px solid var(--borde); border-radius: 16px; padding: 1.1rem 1.2rem; }
+.blog-list h2 { margin: 0 0 .4rem; font-size: 1.35rem; }
+.blog-list h2 a { color: var(--tinta); }
+.post { max-width: 760px; }
+.post-summary { font-size: 1.15rem; background: var(--crema); border-radius: 14px; padding: 1rem 1.2rem; }
+@media (max-width: 560px) { .blog-head { flex-direction: column; } }

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { PRODUCTS, productsBySpecies, SPECIES_LABEL, type Species } from "@/data/products";
 import { SITE } from "@/lib/site";
+import { POSTS } from "@/data/blog";
 
 export const dynamic = "force-static";
 
@@ -23,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/envios/", 0.7),
     page("/preguntas-frecuentes/", 0.7),
     page("/seguros-para-mascotas/", 0.7),
+    page("/consejos-de-caramelo/", 0.7),
+    ...POSTS.map((p) => page(`/consejos-de-caramelo/${p.slug}/`, 0.6)),
     page("/nosotros/", 0.6),
     page("/privacidad/", 0.3),
   ];

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Clock, MapPin, QrCode, Truck } from "lucide-react";
 import { BuySteps, FaqList } from "@/components/Blocks";
-import { BlackFridayBand, CarameloTips, CategoryRail, ProductCarousel } from "@/components/HomeBlocks";
+import { BlackFridayBand, CategoryRail, ProductCarousel } from "@/components/HomeBlocks";
 import { BackToTop } from "@/components/Engage";
 import { SPECIES_ICON } from "@/components/Icons";
 import { JsonLd } from "@/components/JsonLd";
@@ -133,7 +133,14 @@ export default function Home() {
 
         <section className="section" aria-labelledby="h-tips">
           <h2 id="h-tips">¿Qué consejos te da Caramelo?</h2>
-          <CarameloTips />
+          <Link className="tips-cta" href="/consejos-de-caramelo/">
+            <img src="/img/caramelo-144.webp" alt="" width="72" height="72" loading="lazy" />
+            <span>
+              <strong>Consejos de Caramelo</strong>
+              Guías sobre cómo cambiar su alimento, el agua que necesita y los antiparasitarios.
+            </span>
+            <span className="tips-cta-go">Leer el blog</span>
+          </Link>
         </section>
 
         <section className="section" aria-labelledby="h-comprar">

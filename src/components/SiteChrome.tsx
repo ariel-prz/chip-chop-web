@@ -7,8 +7,12 @@ const NAV = [
   { href: "/como-comprar/", label: "Cómo comprar" },
   { href: "/envios/", label: "Envíos" },
   { href: "/seguros-para-mascotas/", label: "Seguros" },
-  { href: "/nosotros/", label: "Nosotros" },
   { href: "/preguntas-frecuentes/", label: "Preguntas frecuentes" },
+];
+
+const ABOUT = [
+  { href: "/nosotros/", label: "Quiénes somos" },
+  { href: "/consejos-de-caramelo/", label: "Consejos de Caramelo (blog)" },
 ];
 
 export function Header() {
@@ -32,6 +36,18 @@ export function Header() {
                 <Link href={n.href}>{n.label}</Link>
               </li>
             ))}
+            <li className="has-sub">
+              <details className="sub">
+                <summary>Nosotros</summary>
+                <ul>
+                  {ABOUT.map((n) => (
+                    <li key={n.href}>
+                      <Link href={n.href}>{n.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
           </ul>
         </nav>
         <nav aria-label="Menú móvil" className="nav-mobile">
@@ -41,6 +57,12 @@ export function Header() {
               {NAV.map((n) => (
                 <li key={n.href}>
                   <Link href={n.href}>{n.label}</Link>
+                </li>
+              ))}
+              <li className="menu-group">Nosotros</li>
+              {ABOUT.map((n) => (
+                <li key={n.href}>
+                  <Link href={n.href} className="menu-sub">{n.label}</Link>
                 </li>
               ))}
             </ul>
@@ -88,6 +110,7 @@ export function Footer() {
           <h2 id="f-info">La tienda</h2>
           <ul>
             <li><Link href="/nosotros/">Quiénes somos</Link></li>
+            <li><Link href="/consejos-de-caramelo/">Consejos de Caramelo</Link></li>
             <li><Link href="/privacidad/">Política de privacidad</Link></li>
             <li>
               <a href={SITE.instagram} rel="noopener me" target="_blank">

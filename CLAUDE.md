@@ -44,8 +44,12 @@ retengan a la fuerza (nada de pop-ups, contadores falsos ni urgencia inventada).
 - **Navegación:** fila de categorías con ícono y conteo (`CategoryRail`), botones por especie, y en
   teléfonos la barra inferior fija `MobileTabBar` (Inicio, Productos, Carrito, WhatsApp). Áreas
   táctiles de 44 px mínimo; botones grandes `btn-lg` en acciones principales.
-- **Permanencia:** carruseles de productos con scroll-snap (`ProductCarousel`), consejos de
-  Caramelo (`CarameloTips`), productos relacionados en cada ficha, enlaces internos descriptivos.
+- **Permanencia:** carruseles de productos con scroll-snap (`ProductCarousel`), productos relacionados
+  en cada ficha, enlaces internos descriptivos.
+- **Blog "Consejos de Caramelo"** en `/consejos-de-caramelo/` (datos en `src/data/blog.ts`, schema
+  `Blog` y `BlogPosting`). Se llega desde el menú Nosotros (desplegable) y desde un botón en la portada.
+  Cada artículo: resumen directo arriba, H2 en pregunta, aviso de que no reemplaza al veterinario y
+  enlace a la categoría de productos relacionada. Base para generar contenido de redes.
 - **Promociones:** franja compacta `BlackFridayBand` (una fila, ~100 px de alto en escritorio), solo en la
   portada como sección 2, entre la vitrina y "¿Qué buscas para tu mascota?". Datos en `src/data/promos.ts`.
   La cuenta regresiva dibuja su espacio con guiones antes de cargar para mantener CLS en 0.
