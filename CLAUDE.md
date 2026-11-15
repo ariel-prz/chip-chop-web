@@ -24,11 +24,46 @@ Tienda de mascotas en Quito. Sitio para el hackatón de Hostinger "Hazte visible
 
 - Datos del negocio (nombre, dirección, horario, WhatsApp, redes): `src/lib/site.ts`. El texto visible y
   el schema leen de ahí; deben coincidir letra por letra con Google Business.
-- Catálogo: `src/data/products.ts`. Después de cambiar precios, sincronizar `public.products` en
+- Catálogo: `src/data/catalog.json` (generado desde el CSV con `scripts/import_catalog.py`, que también renombra las fotos como producto-presentación-especie-categoría). Tipos en `src/data/products.ts`. Después de cambiar precios, sincronizar `public.products` en
   Supabase (el servidor calcula el total con esos precios, nunca con los del navegador).
 - Preguntas frecuentes: `src/data/faq.ts` (alimentan la página y el schema FAQPage).
 - Marca: Manual de marca (colores, Bitter + Nunito Sans, voz "experto cercano", Caramelo es el perro
   del logo). Tokens en `src/app/globals.css`. El dorado nunca se usa como color de texto.
+
+## Diseño de interfaz (vigente desde el 15 nov 2026)
+
+Usar la skill `frontend-design` para cualquier pantalla nueva o rediseño. Público: clientes de 10 a 65
+años, mayoría en teléfono. Objetivo: que naveguen más tiempo y encuentren rápido, sin trucos que
+retengan a la fuerza (nada de pop-ups, contadores falsos ni urgencia inventada).
+
+- **Elemento memorable:** la "vitrina" de la portada (Caramelo sobre un estante azul con fotos reales
+  de productos). No usar fotos de stock ni ilustraciones genéricas de mascotas.
+- **Íconos:** Lucide (`lucide-react`), trazo 1.75, siempre con texto visible al lado o debajo (los
+  íconos ahorran lectura pero no reemplazan la etiqueta). Mapas en `src/components/Icons.tsx`
+  (categoría y especie). Se renderizan como SVG en el servidor: no suman JavaScript.
+- **Navegación:** fila de categorías con ícono y conteo (`CategoryRail`), botones por especie, y en
+  teléfonos la barra inferior fija `MobileTabBar` (Inicio, Productos, Carrito, WhatsApp). Áreas
+  táctiles de 44 px mínimo; botones grandes `btn-lg` en acciones principales.
+- **Permanencia:** carruseles de productos con scroll-snap (`ProductCarousel`), consejos de
+  Caramelo (`CarameloTips`), productos relacionados en cada ficha, enlaces internos descriptivos.
+- **Promociones:** franja `BlackFridayBand` sobre el pie, alimentada por `src/data/promos.ts`.
+  Solo descuentos confirmados por Ariel. Cuenta regresiva real hacia `startsAt`.
+  Vigente: 10 % en todo el alimento seco desde el viernes 27 nov 2026 (el descuento aún NO se
+  aplica automáticamente en `create_order`; implementarlo antes de esa fecha o aplicarlo a mano).
+- **Movimiento:** casi nada. Sin animaciones de entrada por sección. Respetar `prefers-reduced-motion`.
+- **Colores en promociones:** fondo negro tinta con el dorado como superficie; el dorado nunca es
+  color de texto.
+
+### Diseño sin perder SEO/AEO (no negociable)
+
+- El H1 y el párrafo de respuesta directa van primero en el HTML y arriba en el teléfono; las imágenes
+  decorativas van después.
+- Todo texto importante es texto HTML, nunca dentro de una imagen.
+- Los carruseles y pestañas renderizan todo su contenido en el HTML (sin cargar al hacer clic).
+- Cada componente interactivo es una isla `"use client"` pequeña; no importar el catálogo completo
+  en componentes de cliente.
+- Antes de publicar: `python3 scripts/audit.py out` en 0 y Lighthouse móvil de la portada y del
+  catálogo con rendimiento 90+ y LCP < 2.5 s.
 
 ## Reglas de contenido
 
@@ -62,7 +97,7 @@ npm run build                 # genera out/
 python3 scripts/audit.py out  # auditoría de la rúbrica SEO/AEO sobre el HTML crudo
 ```
 
-Lighthouse móvil de referencia (15 nov 2026): 100/100/100/100, LCP 1.1 s, CLS 0.
+Lighthouse móvil de referencia (15 nov 2026, tras el rediseño): portada 97 / LCP 0.8 s; catálogo 99 / LCP 0.8 s; accesibilidad, buenas prácticas y SEO en 100; CLS 0.
 
 ## Rúbricas del hackatón (20 + 20 puntos)
 

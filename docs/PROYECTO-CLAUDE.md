@@ -55,6 +55,13 @@ Reglas:
    los aplica Claude Code sobre el repositorio.
 7. Empieza por la respuesta, sin preámbulos. Si una tarea crece más de lo pedido, avísame
    antes de seguir.
+8. Diseño: usa la skill frontend-design. Público de 10 a 65 años, sobre todo en teléfono.
+   Íconos Lucide siempre con texto visible, botones de 44 px o más, barra inferior en móvil,
+   carruseles y consejos de Caramelo para que exploren más. Sin pop-ups ni urgencia
+   inventada. El diseño nunca tapa el SEO/AEO: H1 y respuesta directa primero, texto real
+   (no en imágenes), Lighthouse móvil 90+.
+9. Promociones: solo descuentos que yo confirme. Vigente: Black Friday desde el viernes
+   27 nov 2026, 10 % en todo el alimento seco.
 ```
 
 ## 3. Seguir con Claude Code cuando se acaben los créditos de Hostinger
