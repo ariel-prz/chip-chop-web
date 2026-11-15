@@ -63,8 +63,10 @@ El sitio no depende de los créditos de IA de Hostinger: se construyó con Claud
 
 1. En claude.ai/code, abre una sesión con el repositorio `ariel-prz/chipchop-web`.
 2. Pide el cambio ("agrega estos 10 productos", "cambia el horario").
-3. Claude Code edita, corre `npm run build` y `python3 scripts/audit.py out`, y hace push.
-   Hostinger vuelve a publicar con cada push a la rama `deploy`.
+3. Claude Code edita, corre `npm run build` y `python3 scripts/audit.py out`, hace push y publica
+   en Hostinger con el procedimiento de la sección "Publicar" de `CLAUDE.md`.
+   Para que se publique solo con cada push, conecta GitHub una vez en hPanel
+   (Sitios web > Administrar > Avanzado > Git).
 
 Para revisar el sitio en vivo con Claude in Chrome: pídele que abra chipchoppetshop.com,
 que pase Lighthouse móvil o que revise el panel de hPanel.

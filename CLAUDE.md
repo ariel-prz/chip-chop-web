@@ -40,6 +40,21 @@ Tienda de mascotas en Quito. Sitio para el hackatón de Hostinger "Hazte visible
   primer párrafo (40 a 60 palabras), title de 50 a 60 caracteres, description de 140 a 160, fecha de
   actualización visible.
 
+## Publicar (mientras GitHub no esté conectado en hPanel)
+
+1. `npm run build && python3 scripts/audit.py out`
+2. Empaquetar: `cd out && zip -qr ../site.zip .` y subir `site.zip` como único archivo a la rama
+   `artifact` del repo `ariel-prz/chip-chop-web` (push forzado).
+3. Hostinger Connector: `hosting_git_deploy-website-repository` (usuario `u671917736`, dominio
+   `chipchoppetshop.com`, rama `artifact`, directorio `_paquete`) y luego
+   `hosting_websites_deploy-static-site-archive` con `archive_path: "_paquete/site.zip"`.
+   El segundo paso reemplaza todo el contenido del sitio por el zip.
+4. Verificar el sitio en vivo.
+
+Cuando Ariel conecte GitHub en hPanel (Sitios web > Administrar > Avanzado > Git), usar
+`hosting_deploy` con `type: "static"` sobre una rama que contenga `out/` para tener despliegue
+automático en cada push.
+
 ## Comandos
 
 ```bash
