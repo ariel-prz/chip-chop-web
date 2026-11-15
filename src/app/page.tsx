@@ -61,7 +61,9 @@ export default function Home() {
           <div className="vitrina">
             <img
               className="vitrina-caramelo"
-              src="/img/logo-480.webp"
+              src="/img/logo-320.webp"
+              srcSet="/img/logo-320.webp 320w, /img/logo-600.webp 600w"
+              sizes="(max-width: 860px) 170px, 300px"
               width="300"
               height="300"
               alt="Logo de Chip Chop Pet Shop: Caramelo, nuestro perro, recibiendo un abrazo"
