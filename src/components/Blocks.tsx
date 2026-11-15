@@ -63,7 +63,7 @@ export function ProductCard({ p, priority = false }: { p: Product; priority?: bo
         {p.size ? ` · ${p.size}` : ""}
       </p>
       <p className="price">{formatUSD(p.price)}</p>
-      <AddToCart sku={p.sku} name={p.name} />
+      <AddToCart sku={p.sku} name={p.name} price={p.price} slug={p.slug} />
     </li>
   );
 }

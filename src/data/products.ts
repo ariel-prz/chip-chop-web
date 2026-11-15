@@ -62,6 +62,4 @@ export function productsBySpecies(s: Species) {
   return PRODUCTS.filter((p) => p.species.includes(s));
 }
 
-export function formatUSD(n: number) {
-  return `$${n.toFixed(2)}`;
-}
+export { formatUSD } from "@/lib/format";

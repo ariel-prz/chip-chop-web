@@ -2,28 +2,32 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { PRODUCTS, type Product } from "@/data/products";
-
-export type CartLine = { sku: string; qty: number };
+// El carrito guarda solo lo que muestra (nombre, precio, enlace). No importa el catálogo
+// completo, para no cargarlo en cada página. El precio real lo calcula el servidor al crear
+// el pedido, así que un precio viejo en el navegador nunca se cobra.
+export type CartItem = { sku: string; name: string; price: number; slug: string };
+export type CartLine = CartItem & { qty: number };
 
 type CartCtx = {
   lines: CartLine[];
   count: number;
   total: number;
-  add: (sku: string, qty?: number) => void;
+  add: (item: CartItem, qty?: number) => void;
   setQty: (sku: string, qty: number) => void;
   clear: () => void;
-  products: (Product & { qty: number })[];
+  products: CartLine[];
 };
 
 const Ctx = createContext<CartCtx | null>(null);
-const KEY = "chipchop-carrito-v1";
+const KEY = "chipchop-carrito-v2";
 
 function readStorage(): CartLine[] {
   try {
     const raw = window.localStorage.getItem(KEY);
     const parsed = raw ? (JSON.parse(raw) as CartLine[]) : [];
-    return parsed.filter((l) => PRODUCTS.some((p) => p.sku === l.sku) && l.qty > 0);
+    return parsed.filter(
+      (l) => typeof l.sku === "string" && typeof l.price === "number" && typeof l.name === "string" && l.qty > 0,
+    );
   } catch {
     return [];
   }
@@ -46,23 +50,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const value = useMemo<CartCtx>(() => {
-    const products = lines
-      .map((l) => {
-        const p = PRODUCTS.find((x) => x.sku === l.sku);
-        return p ? { ...p, qty: l.qty } : null;
-      })
-      .filter(Boolean) as (Product & { qty: number })[];
     return {
       lines,
-      products,
+      products: lines,
       count: lines.reduce((s, l) => s + l.qty, 0),
-      total: Math.round(products.reduce((s, p) => s + p.price * p.qty, 0) * 100) / 100,
-      add: (sku, qty = 1) => {
-        const found = lines.find((l) => l.sku === sku);
+      total: Math.round(lines.reduce((s, p) => s + p.price * p.qty, 0) * 100) / 100,
+      add: (item, qty = 1) => {
+        const found = lines.find((l) => l.sku === item.sku);
         persist(
           found
-            ? lines.map((l) => (l.sku === sku ? { ...l, qty: Math.min(50, l.qty + qty) } : l))
-            : [...lines, { sku, qty }],
+            ? lines.map((l) => (l.sku === item.sku ? { ...l, ...item, qty: Math.min(50, l.qty + qty) } : l))
+            : [...lines, { ...item, qty }],
         );
       },
       setQty: (sku, qty) =>
@@ -99,7 +97,7 @@ export function CartBadge() {
   );
 }
 
-export function AddToCart({ sku, name }: { sku: string; name: string }) {
+export function AddToCart({ sku, name, price, slug }: CartItem) {
   const { add } = useCart();
   const [done, setDone] = useState(false);
   return (
@@ -107,7 +105,7 @@ export function AddToCart({ sku, name }: { sku: string; name: string }) {
       type="button"
       className="btn btn-primary"
       onClick={() => {
-        add(sku);
+        add({ sku, name, price, slug });
         setDone(true);
         setTimeout(() => setDone(false), 1800);
       }}

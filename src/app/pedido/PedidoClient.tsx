@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { formatUSD } from "@/data/products";
+import { formatUSD } from "@/lib/format";
 import { waLink } from "@/lib/site";
 import { supabase } from "@/lib/supabase";
 

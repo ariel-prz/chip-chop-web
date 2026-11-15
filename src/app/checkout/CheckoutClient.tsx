@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useCart } from "@/components/Cart";
-import { formatUSD } from "@/data/products";
+import { formatUSD } from "@/lib/format";
 import { ZONES } from "@/lib/site";
 import { supabase } from "@/lib/supabase";
 
@@ -49,7 +49,7 @@ export function CheckoutClient() {
       p_address: delivery === "envio" ? String(f.get("address") ?? "") : null,
       p_zone: delivery === "envio" ? String(f.get("zone") ?? "") : null,
       p_notes: String(f.get("notes") ?? "") || null,
-      p_items: lines,
+      p_items: lines.map((l) => ({ sku: l.sku, qty: l.qty })),
       p_consent: f.get("consent") === "on",
     });
     setSending(false);

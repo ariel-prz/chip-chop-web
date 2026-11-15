@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   images: { unoptimized: true },
+  // CSS dentro del HTML: sin solicitud que bloquee el renderizado (la hoja pesa ~3 KB).
+  experimental: { inlineCss: true },
 };
 
 export default nextConfig;

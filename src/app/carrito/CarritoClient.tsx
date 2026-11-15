@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCart } from "@/components/Cart";
-import { formatUSD } from "@/data/products";
+import { formatUSD } from "@/lib/format";
 
 export function CarritoClient() {
   const { products, total, setQty } = useCart();

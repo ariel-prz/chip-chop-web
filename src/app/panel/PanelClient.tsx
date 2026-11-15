@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
-import { formatUSD } from "@/data/products";
+import { formatUSD } from "@/lib/format";
 import { supabase } from "@/lib/supabase";
 
 type Order = {

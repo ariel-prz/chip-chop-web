@@ -135,7 +135,7 @@ export default async function ProductPage({ params }: Props) {
             </tbody>
           </table>
           <div className="btn-row">
-            <AddToCart sku={p.sku} name={p.name} />
+            <AddToCart sku={p.sku} name={p.name} price={p.price} slug={p.slug} />
             <a className="btn btn-secondary" href={waLink(`Hola Chip Chop, me interesa: ${p.name}`)} target="_blank" rel="noopener">
               Preguntar por WhatsApp
             </a>
