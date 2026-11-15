@@ -15,10 +15,10 @@ export const metadata = pageMeta({
 });
 
 const SPECIES_INTRO: Record<Species, string> = {
-  perro: "Alimento, premios, correas, juguetes y productos de higiene para tu perro.",
-  gato: "Alimento, snacks, arena y accesorios para el día a día de tu gato.",
-  conejo: "Alimento, heno y accesorios para conejos.",
-  pez: "Alimento y artículos para el acuario de tus peces.",
+  perro: "Alimento seco y húmedo, snacks, masticables, antiparasitarios, correas y productos de higiene.",
+  gato: "Alimento seco y húmedo, snacks, juguetes, collar antipulgas y productos de higiene.",
+  conejo: "Pregúntanos por WhatsApp qué tenemos hoy para tu conejo.",
+  pez: "Pregúntanos por WhatsApp qué tenemos hoy para tus peces.",
 };
 
 const HOME_FAQ = FAQ_GENERAL.slice(0, 6);
@@ -66,8 +66,8 @@ export default function Home() {
         <section className="section" aria-labelledby="h-especies">
           <h2 id="h-especies">¿Qué productos venden para cada mascota?</h2>
           <p>
-            Trabajamos con unos 60 a 70 productos seleccionados para las cuatro mascotas más comunes en los hogares
-            de Quito. Elige la tuya:
+            En la tienda en línea tenemos {PRODUCTS.length} productos con foto y precio, desde $1.00. Elige tu
+            mascota:
           </p>
           <ul className="cards">
             {(Object.keys(SPECIES_LABEL) as Species[]).map((s) => (

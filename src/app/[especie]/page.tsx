@@ -17,30 +17,30 @@ const COPY: Record<Species, { title: string; description: string; intro: string 
   perro: {
     title: "Productos para perros en Quito | Chip Chop Pet Shop",
     description:
-      "Alimento, premios, correas, juguetes e higiene para perros en Quito, con precios en línea. Paga con Deuna y retira en tienda o recibe en tu sector de Quito.",
+      "Alimento seco y húmedo, snacks, masticables, antiparasitarios y correas para perros en Quito, con precios en línea. Paga con Deuna y retira o recibe en casa.",
     intro:
       "Todo lo que vendemos para perros, con precio final. Si no sabes qué alimento elegir para la edad o el tamaño de tu perro, escríbenos por WhatsApp y te ayudamos a escoger.",
   },
   gato: {
     title: "Productos para gatos en Quito | Chip Chop Pet Shop",
     description:
-      "Alimento, snacks, arena y accesorios para gatos en Quito con precios en línea. Compra desde el celular, paga con Deuna y retira en tienda o recibe en casa.",
+      "Alimento seco y húmedo, snacks, juguetes y collar antipulgas para gatos en Quito, con precios en línea. Paga con Deuna y retira en tienda o recibe en casa.",
     intro:
       "Todo lo que vendemos para gatos, con precio final. Si tienes dudas sobre qué producto le conviene a tu gato, escríbenos por WhatsApp antes de comprar.",
   },
   conejo: {
     title: "Productos para conejos en Quito | Chip Chop Pet Shop",
     description:
-      "Alimento y accesorios para conejos en Quito con precios en línea. Compra en Chip Chop Pet Shop, paga con Deuna y retira en tienda o recibe en tu sector.",
+      "Consulta por WhatsApp los productos para conejos de Chip Chop Pet Shop en Quito. Abrimos todos los días de 8:00 a 22:00, con retiro en tienda o envío.",
     intro:
-      "Productos para conejos con precio final. Si buscas algo específico para tu conejo que no ves aquí, pregúntanos por WhatsApp.",
+      "Todavía no publicamos productos para conejos en la tienda en línea. Escríbenos por WhatsApp y te contamos qué tenemos hoy en el local.",
   },
   pez: {
     title: "Productos para peces y acuarios en Quito | Chip Chop",
     description:
-      "Alimento para peces y artículos de acuario en Quito con precios en línea. Compra en Chip Chop Pet Shop, paga con Deuna y retira en el local o recibe en casa.",
+      "Consulta por WhatsApp los productos para peces y acuarios de Chip Chop Pet Shop en Quito. Abrimos todos los días de 8:00 a 22:00, con retiro o envío.",
     intro:
-      "Alimento y artículos para el acuario con precio final. Si estás armando tu primer acuario, escríbenos y te decimos qué necesitas.",
+      "Todavía no publicamos productos para peces en la tienda en línea. Escríbenos por WhatsApp y te contamos qué tenemos hoy en el local.",
   },
 };
 
@@ -54,7 +54,13 @@ export async function generateMetadata({ params }: Props) {
   const { especie } = await params;
   const s = BY_SLUG[especie];
   if (!s) return {};
-  return pageMeta({ title: COPY[s].title, description: COPY[s].description, path: `/${especie}/` });
+  // Sin productos publicados la página es delgada: no se indexa hasta tener catálogo.
+  return pageMeta({
+    title: COPY[s].title,
+    description: COPY[s].description,
+    path: `/${especie}/`,
+    noindex: productsBySpecies(s).length === 0,
+  });
 }
 
 export default async function EspeciePage({ params }: Props) {
@@ -74,7 +80,14 @@ export default async function EspeciePage({ params }: Props) {
       />
       <h1>Productos para {label.plural} en Quito</h1>
       <p>{COPY[s].intro}</p>
-      <ProductGrid products={list} />
+      {list.length > 0 && (
+        <section aria-labelledby="h-lista">
+          <h2 id="h-lista">
+            {list.length} productos para {label.plural} con precio
+          </h2>
+          <ProductGrid products={list} priority />
+        </section>
+      )}
       <h2>¿Cómo los recibo?</h2>
       <p>
         Pagas con Deuna y retiras en la tienda sin costo, o te lo enviamos a Quito Norte, Centro, Sur o los Valles

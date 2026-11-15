@@ -20,15 +20,43 @@ export function generateStaticParams() {
 
 type Props = { params: Promise<{ slug: string }> };
 
+// Title de 30 a 60 caracteres: se elige la variante más completa que entra.
+function productTitle(name: string, size?: string) {
+  const options = [
+    size ? `${name} ${size} | Chip Chop Pet Shop` : "",
+    `${name} | Chip Chop Pet Shop Quito`,
+    `${name} | Chip Chop Pet Shop`,
+    `${name} | Chip Chop`,
+  ].filter(Boolean);
+  const fit = options.find((t) => t.length <= 60);
+  if (fit) return fit.length < 30 ? `${fit} en Quito` : fit;
+  return `${name.slice(0, 57).trimEnd()}...`;
+}
+
+// Meta description de 140 a 160 caracteres con precio, presentación y forma de compra.
+function productDescription(name: string, size: string | undefined, price: number, cat: string, species: string) {
+  const base = `${name}${size ? `, ${size.toLowerCase()}` : ""}, a ${formatUSD(price)} en Quito.`;
+  const tails = [
+    ` ${cat} para ${species}. Paga con Deuna y retira en Chip Chop Pet Shop o recíbelo en tu casa.`,
+    ` ${cat} para ${species}. Paga con Deuna y retira en tienda o recíbelo en casa.`,
+    ` Paga con Deuna y retira en tienda o recíbelo en casa.`,
+    ` Paga con Deuna, retira o recibe en casa.`,
+  ];
+  for (const t of tails) {
+    const d = base + t;
+    if (d.length <= 160) return d.length >= 140 ? d : `${d} Atendemos todos los días.`.slice(0, 160);
+  }
+  return `${base.slice(0, 157).trimEnd()}...`;
+}
+
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const p = PRODUCTS.find((x) => x.slug === slug);
   if (!p) return { title: "Catálogo en preparación | Chip Chop Pet Shop", robots: { index: false } };
   const species = p.species.map((s) => SPECIES_LABEL[s].plural).join(" y ");
-  const desc = `${p.name}${p.size ? ` (${p.size})` : ""} a ${formatUSD(p.price)} en Quito. ${p.description}`;
   return pageMeta({
-    title: `${p.name} | ${CATEGORY_LABEL[p.category]} para ${species} en Quito`,
-    description: desc.length > 160 ? `${desc.slice(0, 157).trimEnd()}...` : desc,
+    title: productTitle(p.name, p.size),
+    description: productDescription(p.name, p.size, p.price, CATEGORY_LABEL[p.category], species),
     path: `/productos/${p.slug}/`,
     image: p.image,
   });
@@ -113,10 +141,18 @@ export default async function ProductPage({ params }: Props) {
             </a>
           </div>
           <p className="hint">
-            Precio en dólares con IVA incluido. Atendemos {SITE.hours.label.toLowerCase()}.
+            Precio en dólares. Atendemos {SITE.hours.label.toLowerCase()}.
           </p>
         </div>
       </div>
+      <section aria-labelledby="h-compra">
+        <h2 id="h-compra">¿Cómo compro {p.name}?</h2>
+        <p>
+          Agrégalo al carrito, deja tus datos y paga con Deuna el monto exacto que te muestra el sitio. Cuando el
+          pago se valida te escribimos por WhatsApp: puedes retirarlo sin costo en la tienda, abierta todos los días de
+          8:00 a 22:00, o recibirlo en Quito Norte, Centro, Sur o los Valles con costo de envío según tu sector.
+        </p>
+      </section>
       {related.length > 0 && (
         <section aria-labelledby="h-rel">
           <h2 id="h-rel">Otros productos para {first.plural}</h2>

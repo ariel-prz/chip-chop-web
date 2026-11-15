@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Blocks";
 import { JsonLd } from "@/components/JsonLd";
+import { PRODUCTS } from "@/data/products";
 import { pageMeta } from "@/lib/meta";
 import { SITE, fullAddress, mapsLink, waLink } from "@/lib/site";
 
@@ -45,8 +46,9 @@ export default function Nosotros() {
           </p>
           <h2>¿Qué vendemos?</h2>
           <p>
-            Unos 60 a 70 productos seleccionados de alimento, snacks, accesorios e higiene para perros, gatos,
-            conejos y peces. <Link href="/productos/">Mira el catálogo con precios</Link>.
+            {PRODUCTS.length} productos con foto y precio en la tienda en línea: alimento seco y húmedo, snacks,
+            masticables, antiparasitarios, suplementos, higiene, accesorios y juguetes, de marcas como NutraPro,
+            Purina, Whiskas, Carnitas, Mascan y Avant. <Link href="/productos/">Mira el catálogo con precios</Link>.
           </p>
         </div>
         <img

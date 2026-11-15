@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "audit": "python3 scripts/audit.py out",
-    "sync:sql": "node --no-warnings --experimental-strip-types scripts/products-sql.mjs"
+    "sync:sql": "node scripts/products-sql.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.0",

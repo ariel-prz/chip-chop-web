@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { AddToCart } from "@/components/Cart";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Faq } from "@/data/faq";
-import { CATEGORY_LABEL, formatUSD, SPECIES_LABEL, type Product } from "@/data/products";
+import { CATEGORY_LABEL, formatUSD, SPECIES_LABEL, thumbOf, type Product } from "@/data/products";
 
 export function Breadcrumbs({ items }: { items: { name: string; path: string }[] }) {
   const all = [{ name: "Inicio", path: "/" }, ...items];
@@ -37,13 +37,21 @@ export function FaqList({ items, headingLevel = 3 }: { items: Faq[]; headingLeve
   );
 }
 
-export function ProductCard({ p }: { p: Product }) {
+export function ProductCard({ p, priority = false }: { p: Product; priority?: boolean }) {
   return (
     <li className="card">
       <Link href={`/productos/${p.slug}/`} className="stretch">
         <div className="thumb">
           {p.image ? (
-            <img src={p.image} alt={`${p.name}${p.size ? `, presentación ${p.size}` : ""}`} width="400" height="400" loading="lazy" decoding="async" />
+            <img
+              src={thumbOf(p.image)}
+              alt={`${p.name}${p.size ? `, presentación ${p.size}` : ""}`}
+              width="400"
+              height="400"
+              loading={priority ? "eager" : "lazy"}
+              fetchPriority={priority ? "high" : "auto"}
+              decoding="async"
+            />
           ) : (
             <img src="/img/logo-240.webp" alt="" width="160" height="160" loading="lazy" />
           )}
@@ -60,19 +68,19 @@ export function ProductCard({ p }: { p: Product }) {
   );
 }
 
-export function ProductGrid({ products }: { products: Product[] }) {
+export function ProductGrid({ products, empty, priority = false }: { products: Product[]; empty?: string; priority?: boolean }) {
   if (products.length === 0) {
     return (
       <p className="note">
-        Estamos cargando el catálogo con fotos de nuestros productos. Mientras tanto, pregúntanos por
-        WhatsApp lo que necesitas y te confirmamos precio y disponibilidad.
+        {empty ??
+          "Estamos cargando el catálogo. Mientras tanto, pregúntanos por WhatsApp lo que necesitas y te confirmamos precio y disponibilidad."}
       </p>
     );
   }
   return (
-    <ul className="cards">
-      {products.map((p) => (
-        <ProductCard key={p.sku} p={p} />
+    <ul className="cards products">
+      {products.map((p, i) => (
+        <ProductCard key={p.sku} p={p} priority={priority && i < 2} />
       ))}
     </ul>
   );

@@ -1,0 +1,1179 @@
+[
+ {
+  "sku": "CC-3603",
+  "slug": "carnitas-trocitos-en-salsa-pavo-salmon-gato-adulto-sobre-85-g",
+  "name": "Carnitas Trocitos en salsa Pavo Salmón, Gato adulto",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Carnitas para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/carnitas-trocitos-en-salsa-pavo-salmon-gato-adulto-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Carnitas",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3604",
+  "slug": "whiskas-adulto-1-pollo-en-salsa-sobre-85-g",
+  "name": "Whiskas Adulto 1+ Pollo en salsa",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Whiskas para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/whiskas-adulto-1-pollo-en-salsa-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Whiskas",
+  "size": "Sobre 85 g",
+  "featured": true
+ },
+ {
+  "sku": "CC-3605",
+  "slug": "whiskas-adulto-1-atun-en-salsa-sobre-85-g",
+  "name": "Whiskas Adulto 1+ Atún en salsa",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Whiskas para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/whiskas-adulto-1-atun-en-salsa-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Whiskas",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3606",
+  "slug": "carnitas-trocitos-en-salsa-cordero-perro-adulto-sobre-100-g",
+  "name": "Carnitas Trocitos en salsa Cordero, Perro adulto",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Carnitas para perros, sobre 100 g. Precio por unidad.",
+  "image": "/img/productos/carnitas-trocitos-en-salsa-cordero-perro-adulto-sobre-100-g-perro-alimento-humedo.webp",
+  "brand": "Carnitas",
+  "size": "Sobre 100 g"
+ },
+ {
+  "sku": "CC-3607",
+  "slug": "felix-gatitos-sabor-carne-sobre-85-g",
+  "name": "Felix Gatitos sabor Carne",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Felix para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/felix-gatitos-sabor-carne-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Purina Felix",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3608",
+  "slug": "felix-sabor-salmon-sobre-85-g",
+  "name": "Felix sabor Salmón",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Felix para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/felix-sabor-salmon-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Purina Felix",
+  "size": "Sobre 85 g",
+  "featured": true
+ },
+ {
+  "sku": "CC-3609",
+  "slug": "felix-megamix-adultos-5-proteinas-sobre-85-g",
+  "name": "Felix Megamix Adultos (5 proteínas)",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Felix para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/felix-megamix-adultos-5-proteinas-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Purina Felix",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3610",
+  "slug": "carnitas-trocitos-en-salsa-cerdo-salmon-perro-adulto-sobre-100-g",
+  "name": "Carnitas Trocitos en salsa Cerdo Salmón, Perro adulto",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Carnitas para perros, sobre 100 g. Precio por unidad.",
+  "image": "/img/productos/carnitas-trocitos-en-salsa-cerdo-salmon-perro-adulto-sobre-100-g-perro-alimento-humedo.webp",
+  "brand": "Carnitas",
+  "size": "Sobre 100 g"
+ },
+ {
+  "sku": "CC-3611",
+  "slug": "nutrapro-delibites-catnip-sabor-pollo-funda-100-g",
+  "name": "NutraPro Delibites Catnip sabor Pollo",
+  "species": [
+   "gato"
+  ],
+  "category": "snacks",
+  "price": 1.2,
+  "description": "Snack NutraPro para gatos, funda 100 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/nutrapro-delibites-catnip-sabor-pollo-funda-100-g-gato-snacks-y-premios.webp",
+  "brand": "NutraPro",
+  "size": "Funda 100 g"
+ },
+ {
+  "sku": "CC-3612",
+  "slug": "nutrapro-delibites-hairball-sabor-pollo-funda-100-g",
+  "name": "NutraPro Delibites Hairball sabor Pollo",
+  "species": [
+   "gato"
+  ],
+  "category": "snacks",
+  "price": 1.2,
+  "description": "Snack NutraPro para gatos, funda 100 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/nutrapro-delibites-hairball-sabor-pollo-funda-100-g-gato-snacks-y-premios.webp",
+  "brand": "NutraPro",
+  "size": "Funda 100 g"
+ },
+ {
+  "sku": "CC-3613",
+  "slug": "felix-travesuras-bocaditos-de-pollo-higado-y-pavo-funda",
+  "name": "Felix Travesuras Bocaditos de Pollo, Hígado y Pavo",
+  "species": [
+   "gato"
+  ],
+  "category": "snacks",
+  "price": 1.0,
+  "description": "Snack Purina Felix para gatos, funda. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/felix-travesuras-bocaditos-de-pollo-higado-y-pavo-funda-gato-snacks-y-premios.webp",
+  "brand": "Purina Felix",
+  "size": "Funda"
+ },
+ {
+  "sku": "CC-3615",
+  "slug": "mascan-masticables-sabor-natural-perro-pequeno-514-kg-paquete-2-huesos",
+  "name": "Mascan Masticables sabor Natural, Perro pequeño (5–14 kg)",
+  "species": [
+   "perro"
+  ],
+  "category": "masticables",
+  "price": 2.0,
+  "description": "Masticable Mascan para perros, paquete 2 huesos. Supervisa a tu perro mientras lo mastica.",
+  "image": "/img/productos/mascan-masticables-sabor-natural-perro-pequeno-514-kg-paquete-2-huesos-perro-masticables.webp",
+  "brand": "Mascan",
+  "size": "Paquete 2 huesos"
+ },
+ {
+  "sku": "CC-3616",
+  "slug": "mascan-treat-sabor-carne-funda",
+  "name": "Mascan Treat sabor Carne",
+  "species": [
+   "perro"
+  ],
+  "category": "snacks",
+  "price": 2.0,
+  "description": "Snack Mascan para perros, funda. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/mascan-treat-sabor-carne-funda-perro-snacks-y-premios.webp",
+  "brand": "Mascan",
+  "size": "Funda"
+ },
+ {
+  "sku": "CC-3617",
+  "slug": "mascan-masticables-sabor-carne-perro-de-15-a-25-kg-1-hueso",
+  "name": "Mascan Masticables sabor Carne, Perro de 15 a 25 kg",
+  "species": [
+   "perro"
+  ],
+  "category": "masticables",
+  "price": 1.5,
+  "description": "Masticable Mascan para perros, 1 hueso. Supervisa a tu perro mientras lo mastica.",
+  "image": "/img/productos/mascan-masticables-sabor-carne-perro-de-15-a-25-kg-1-hueso-perro-masticables.webp",
+  "brand": "Mascan",
+  "size": "1 hueso"
+ },
+ {
+  "sku": "CC-3618",
+  "slug": "mascan-masticables-sabor-ahumado-1-hueso",
+  "name": "Mascan Masticables sabor Ahumado",
+  "species": [
+   "perro"
+  ],
+  "category": "masticables",
+  "price": 1.5,
+  "description": "Masticable Mascan para perros, 1 hueso. Supervisa a tu perro mientras lo mastica.",
+  "image": "/img/productos/mascan-masticables-sabor-ahumado-1-hueso-perro-masticables.webp",
+  "brand": "Mascan",
+  "size": "1 hueso"
+ },
+ {
+  "sku": "CC-3620",
+  "slug": "carnitas-snack-de-carne-xl-funda-xl-250-g",
+  "name": "Carnitas Snack de Carne XL",
+  "species": [
+   "perro"
+  ],
+  "category": "snacks",
+  "price": 7.0,
+  "description": "Snack Carnitas para perros, funda xl 250 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/carnitas-snack-de-carne-xl-funda-xl-250-g-perro-snacks-y-premios.webp",
+  "brand": "Carnitas",
+  "size": "Funda XL 250 g",
+  "featured": true
+ },
+ {
+  "sku": "CC-3621",
+  "slug": "nutrapro-delibites-sabores-del-mar-funda-100-g",
+  "name": "NutraPro Delibites Sabores del Mar",
+  "species": [
+   "gato"
+  ],
+  "category": "snacks",
+  "price": 1.2,
+  "description": "Snack NutraPro para gatos, funda 100 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/nutrapro-delibites-sabores-del-mar-funda-100-g-gato-snacks-y-premios.webp",
+  "brand": "NutraPro",
+  "size": "Funda 100 g"
+ },
+ {
+  "sku": "CC-3622",
+  "slug": "nutrapro-delibites-carne-e-higado-funda-100-g",
+  "name": "NutraPro Delibites Carne e Hígado",
+  "species": [
+   "gato"
+  ],
+  "category": "snacks",
+  "price": 1.2,
+  "description": "Snack NutraPro para gatos, funda 100 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/nutrapro-delibites-carne-e-higado-funda-100-g-gato-snacks-y-premios.webp",
+  "brand": "NutraPro",
+  "size": "Funda 100 g"
+ },
+ {
+  "sku": "CC-3623",
+  "slug": "nutrapro-delibites-pollo-e-higado-funda-100-g",
+  "name": "NutraPro Delibites Pollo e Hígado",
+  "species": [
+   "gato"
+  ],
+  "category": "snacks",
+  "price": 1.2,
+  "description": "Snack NutraPro para gatos, funda 100 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/nutrapro-delibites-pollo-e-higado-funda-100-g-gato-snacks-y-premios.webp",
+  "brand": "NutraPro",
+  "size": "Funda 100 g"
+ },
+ {
+  "sku": "CC-3624",
+  "slug": "carnitas-snack-de-pollo-xl-funda-250-g",
+  "name": "Carnitas Snack de Pollo XL",
+  "species": [
+   "perro"
+  ],
+  "category": "snacks",
+  "price": 7.0,
+  "description": "Snack Carnitas para perros, funda 250 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/carnitas-snack-de-pollo-xl-funda-250-g-perro-snacks-y-premios.webp",
+  "brand": "Carnitas",
+  "size": "Funda 250 g"
+ },
+ {
+  "sku": "CC-3625",
+  "slug": "dog-chow-extra-life-adultos-con-pavo-sobre-100-g",
+  "name": "Dog Chow Extra Life Adultos con Pavo",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Dog Chow para perros, sobre 100 g. Precio por unidad.",
+  "image": "/img/productos/dog-chow-extra-life-adultos-con-pavo-sobre-100-g-perro-alimento-humedo.webp",
+  "brand": "Purina Dog Chow",
+  "size": "Sobre 100 g"
+ },
+ {
+  "sku": "CC-3626",
+  "slug": "dog-chow-extra-life-adultos-con-cordero-sobre-100-g",
+  "name": "Dog Chow Extra Life Adultos con Cordero",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Dog Chow para perros, sobre 100 g. Precio por unidad.",
+  "image": "/img/productos/dog-chow-extra-life-adultos-con-cordero-sobre-100-g-perro-alimento-humedo.webp",
+  "brand": "Purina Dog Chow",
+  "size": "Sobre 100 g"
+ },
+ {
+  "sku": "CC-3627",
+  "slug": "dog-chow-extra-life-adultos-con-carne-sobre-100-g",
+  "name": "Dog Chow Extra Life Adultos con Carne",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Dog Chow para perros, sobre 100 g. Precio por unidad.",
+  "image": "/img/productos/dog-chow-extra-life-adultos-con-carne-sobre-100-g-perro-alimento-humedo.webp",
+  "brand": "Purina Dog Chow",
+  "size": "Sobre 100 g"
+ },
+ {
+  "sku": "CC-3628",
+  "slug": "dog-chow-extra-life-cachorros-con-pollo-sobre-100-g",
+  "name": "Dog Chow Extra Life Cachorros con Pollo",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Dog Chow para perros, sobre 100 g. Precio por unidad.",
+  "image": "/img/productos/dog-chow-extra-life-cachorros-con-pollo-sobre-100-g-perro-alimento-humedo.webp",
+  "brand": "Purina Dog Chow",
+  "size": "Sobre 100 g"
+ },
+ {
+  "sku": "CC-3630",
+  "slug": "felix-sabor-atun-sobre-85-g",
+  "name": "Felix sabor Atún",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Felix para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/felix-sabor-atun-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Purina Felix",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3631",
+  "slug": "felix-sabor-pescado-blanco-sobre-85-g",
+  "name": "Felix sabor Pescado Blanco",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Purina Felix para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/felix-sabor-pescado-blanco-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "Purina Felix",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3632",
+  "slug": "plato-comedero-plastico-beige-1-unidad",
+  "name": "Plato comedero plástico beige",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "accesorios",
+  "price": 1.0,
+  "description": "Accesorio para perros y gatos, 1 unidad. Precio por unidad.",
+  "image": "/img/productos/plato-comedero-plastico-beige-1-unidad-perro-y-gato-accesorios.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3633",
+  "slug": "plato-comedero-plastico-rosado-1-unidad",
+  "name": "Plato comedero plástico rosado",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "accesorios",
+  "price": 1.0,
+  "description": "Accesorio para perros y gatos, 1 unidad. Precio por unidad.",
+  "image": "/img/productos/plato-comedero-plastico-rosado-1-unidad-perro-y-gato-accesorios.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3634",
+  "slug": "plato-comedero-plastico-verde-1-unidad",
+  "name": "Plato comedero plástico verde",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "accesorios",
+  "price": 1.25,
+  "description": "Accesorio para perros y gatos, 1 unidad. Precio por unidad.",
+  "image": "/img/productos/plato-comedero-plastico-verde-1-unidad-perro-y-gato-accesorios.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3635",
+  "slug": "comedero-doble-celeste-diseno-rana-1-unidad",
+  "name": "Comedero doble celeste diseño rana",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "accesorios",
+  "price": 3.0,
+  "description": "Accesorio para perros y gatos, 1 unidad. Precio por unidad.",
+  "image": "/img/productos/comedero-doble-celeste-diseno-rana-1-unidad-perro-y-gato-accesorios.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3637",
+  "slug": "plato-comedero-plastico-amarillo-1-unidad",
+  "name": "Plato comedero plástico amarillo",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "accesorios",
+  "price": 2.0,
+  "description": "Accesorio para perros y gatos, 1 unidad. Precio por unidad.",
+  "image": "/img/productos/plato-comedero-plastico-amarillo-1-unidad-perro-y-gato-accesorios.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3638",
+  "slug": "nutrapro-adultos-light-razas-medianas-y-grandes-funda-2-kg",
+  "name": "NutraPro Adultos Light, Razas medianas y grandes",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-seco",
+  "price": 8.5,
+  "description": "Alimento seco (croquetas) NutraPro para perros, funda 2 kg.",
+  "image": "/img/productos/nutrapro-adultos-light-razas-medianas-y-grandes-funda-2-kg-perro-alimento-seco.webp",
+  "brand": "NutraPro",
+  "size": "Funda 2 kg"
+ },
+ {
+  "sku": "CC-3639",
+  "slug": "nutrapro-adultos-razas-medianas-y-grandes-funda-2-kg",
+  "name": "NutraPro Adultos, Razas medianas y grandes",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-seco",
+  "price": 8.0,
+  "description": "Alimento seco (croquetas) NutraPro para perros, funda 2 kg.",
+  "image": "/img/productos/nutrapro-adultos-razas-medianas-y-grandes-funda-2-kg-perro-alimento-seco.webp",
+  "brand": "NutraPro",
+  "size": "Funda 2 kg",
+  "featured": true
+ },
+ {
+  "sku": "CC-3640",
+  "slug": "nutrapro-adultos-razas-pequenas-y-miniatura-funda-2-kg",
+  "name": "NutraPro Adultos, Razas pequeñas y miniatura",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-seco",
+  "price": 8.0,
+  "description": "Alimento seco (croquetas) NutraPro para perros, funda 2 kg.",
+  "image": "/img/productos/nutrapro-adultos-razas-pequenas-y-miniatura-funda-2-kg-perro-alimento-seco.webp",
+  "brand": "NutraPro",
+  "size": "Funda 2 kg"
+ },
+ {
+  "sku": "CC-3641",
+  "slug": "nutrapro-cachorros-razas-pequenas-y-miniatura-funda-2-kg",
+  "name": "NutraPro Cachorros, Razas pequeñas y miniatura",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-seco",
+  "price": 8.5,
+  "description": "Alimento seco (croquetas) NutraPro para perros, funda 2 kg.",
+  "image": "/img/productos/nutrapro-cachorros-razas-pequenas-y-miniatura-funda-2-kg-perro-alimento-seco.webp",
+  "brand": "NutraPro",
+  "size": "Funda 2 kg"
+ },
+ {
+  "sku": "CC-3642",
+  "slug": "cat-chow-delimix-adultos-salmon-carne-y-pollo-funda",
+  "name": "Cat Chow Delimix Adultos Salmón, Carne y Pollo",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-seco",
+  "price": 1.25,
+  "description": "Alimento seco (croquetas) Purina Cat Chow para gatos, funda.",
+  "image": "/img/productos/cat-chow-delimix-adultos-salmon-carne-y-pollo-funda-gato-alimento-seco.webp",
+  "brand": "Purina Cat Chow",
+  "size": "Funda"
+ },
+ {
+  "sku": "CC-3645",
+  "slug": "mascan-masticable-hueso-grande-sabor-carne-1-hueso",
+  "name": "Mascan Masticable hueso grande sabor Carne",
+  "species": [
+   "perro"
+  ],
+  "category": "masticables",
+  "price": 9.0,
+  "description": "Masticable Mascan para perros, 1 hueso. Supervisa a tu perro mientras lo mastica.",
+  "image": "/img/productos/mascan-masticable-hueso-grande-sabor-carne-1-hueso-perro-masticables.webp",
+  "brand": "Mascan",
+  "size": "1 hueso",
+  "featured": true
+ },
+ {
+  "sku": "CC-3647",
+  "slug": "nutrapro-adultos-pollo-y-vegetales-lata-170-g",
+  "name": "NutraPro Adultos Pollo y Vegetales",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.5,
+  "description": "Alimento húmedo NutraPro para perros, lata 170 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-adultos-pollo-y-vegetales-lata-170-g-perro-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Lata 170 g"
+ },
+ {
+  "sku": "CC-3648",
+  "slug": "nutrapro-adultos-carne-y-vegetales-lata-170-g",
+  "name": "NutraPro Adultos Carne y Vegetales",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.5,
+  "description": "Alimento húmedo NutraPro para perros, lata 170 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-adultos-carne-y-vegetales-lata-170-g-perro-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Lata 170 g"
+ },
+ {
+  "sku": "CC-3649",
+  "slug": "avant-cachorros-pavo-vegetales-y-quinoa-lata-180-g",
+  "name": "Avant Cachorros Pavo, Vegetales y Quinoa",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 2.0,
+  "description": "Alimento húmedo Avant para perros, lata 180 g. Precio por unidad.",
+  "image": "/img/productos/avant-cachorros-pavo-vegetales-y-quinoa-lata-180-g-perro-alimento-humedo.webp",
+  "brand": "Avant",
+  "size": "Lata 180 g"
+ },
+ {
+  "sku": "CC-3651",
+  "slug": "avant-adultos-res-vegetales-y-arroz-lata-180-g",
+  "name": "Avant Adultos Res, Vegetales y Arroz",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 2.0,
+  "description": "Alimento húmedo Avant para perros, lata 180 g. Precio por unidad.",
+  "image": "/img/productos/avant-adultos-res-vegetales-y-arroz-lata-180-g-perro-alimento-humedo.webp",
+  "brand": "Avant",
+  "size": "Lata 180 g"
+ },
+ {
+  "sku": "CC-3652",
+  "slug": "endogard-10-antiparasitario-interno-perro-mediano-10-kg-caja-2-tabletas",
+  "name": "Endogard 10, Antiparasitario interno, perro mediano (10 kg)",
+  "species": [
+   "perro"
+  ],
+  "category": "antiparasitarios",
+  "price": 5.0,
+  "description": "Antiparasitario Virbac para perros, caja 2 tabletas. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/endogard-10-antiparasitario-interno-perro-mediano-10-kg-caja-2-tabletas-perro-antiparasitarios.webp",
+  "brand": "Virbac",
+  "size": "Caja 2 tabletas"
+ },
+ {
+  "sku": "CC-3653",
+  "slug": "relampago-antiparasitario-oral-de-amplio-espectro-caja-2-ml",
+  "name": "Relámpago, Antiparasitario oral de amplio espectro",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "antiparasitarios",
+  "price": 1.95,
+  "description": "Antiparasitario Mascotas para perros y gatos, caja 2 ml. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/relampago-antiparasitario-oral-de-amplio-espectro-caja-2-ml-perro-y-gato-antiparasitarios.webp",
+  "brand": "Mascotas",
+  "size": "Caja 2 mL"
+ },
+ {
+  "sku": "CC-3654",
+  "slug": "carnitas-complete-cordero-asado-y-verduras-rollo",
+  "name": "Carnitas Complete Cordero asado y Verduras",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.75,
+  "description": "Alimento húmedo Carnitas para perros, rollo. Precio por unidad.",
+  "image": "/img/productos/carnitas-complete-cordero-asado-y-verduras-rollo-perro-alimento-humedo.webp",
+  "brand": "Carnitas",
+  "size": "Rollo"
+ },
+ {
+  "sku": "CC-3656",
+  "slug": "carnitas-sazonador-sabor-pollo-frasco-60-g",
+  "name": "Carnitas Sazonador sabor Pollo",
+  "species": [
+   "perro"
+  ],
+  "category": "snacks",
+  "price": 2.0,
+  "description": "Snack Carnitas para perros, frasco 60 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/carnitas-sazonador-sabor-pollo-frasco-60-g-perro-snacks-y-premios.webp",
+  "brand": "Carnitas",
+  "size": "Frasco 60 g"
+ },
+ {
+  "sku": "CC-3657",
+  "slug": "collar-antipulgas-dominal-perros-grandes-1-collar-de-60-cm",
+  "name": "Collar antipulgas Dominal, Perros grandes",
+  "species": [
+   "perro"
+  ],
+  "category": "antiparasitarios",
+  "price": 9.0,
+  "description": "Antiparasitario König para perros, 1 collar de 60 cm. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/collar-antipulgas-dominal-perros-grandes-1-collar-de-60-cm-perro-antiparasitarios.webp",
+  "brand": "König",
+  "size": "1 collar de 60 cm"
+ },
+ {
+  "sku": "CC-3658",
+  "slug": "collar-antipulgas-dominal-perros-medianos-1-collar-de-48-cm",
+  "name": "Collar antipulgas Dominal, Perros medianos",
+  "species": [
+   "perro"
+  ],
+  "category": "antiparasitarios",
+  "price": 8.0,
+  "description": "Antiparasitario König para perros, 1 collar de 48 cm. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/collar-antipulgas-dominal-perros-medianos-1-collar-de-48-cm-perro-antiparasitarios.webp",
+  "brand": "König",
+  "size": "1 collar de 48 cm",
+  "featured": true
+ },
+ {
+  "sku": "CC-3659",
+  "slug": "collar-antipulgas-dominal-cachorros-y-perros-chicos-1-collar-de-36-cm",
+  "name": "Collar antipulgas Dominal, Cachorros y perros chicos",
+  "species": [
+   "perro"
+  ],
+  "category": "antiparasitarios",
+  "price": 7.5,
+  "description": "Antiparasitario König para perros, 1 collar de 36 cm. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/collar-antipulgas-dominal-cachorros-y-perros-chicos-1-collar-de-36-cm-perro-antiparasitarios.webp",
+  "brand": "König",
+  "size": "1 collar de 36 cm"
+ },
+ {
+  "sku": "CC-3660",
+  "slug": "collar-antipulgas-dominal-gatos-1-collar-de-36-cm",
+  "name": "Collar antipulgas Dominal, Gatos",
+  "species": [
+   "gato"
+  ],
+  "category": "antiparasitarios",
+  "price": 7.5,
+  "description": "Antiparasitario König para gatos, 1 collar de 36 cm. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/collar-antipulgas-dominal-gatos-1-collar-de-36-cm-gato-antiparasitarios.webp",
+  "brand": "König",
+  "size": "1 collar de 36 cm"
+ },
+ {
+  "sku": "CC-3661",
+  "slug": "nutrapro-chunk-pate-gatitos-pollo-y-atun-sobre-85-g",
+  "name": "NutraPro Chunk Paté Gatitos Pollo y Atún",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo NutraPro para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-chunk-pate-gatitos-pollo-y-atun-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3662",
+  "slug": "nutrapro-chunk-pate-cachorros-pollo-sobre-85-g",
+  "name": "NutraPro Chunk Paté Cachorros Pollo",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo NutraPro para perros, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-chunk-pate-cachorros-pollo-sobre-85-g-perro-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3663",
+  "slug": "nutrapro-chunk-pate-gatos-atun-y-sardina-sobre-85-g",
+  "name": "NutraPro Chunk Paté Gatos Atún y Sardina",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo NutraPro para gatos, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-chunk-pate-gatos-atun-y-sardina-sobre-85-g-gato-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3664",
+  "slug": "nutrapro-chunk-pate-adultos-pollo-carne-e-higado-sobre-85-g",
+  "name": "NutraPro Chunk Paté Adultos Pollo, Carne e Hígado",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo NutraPro para perros, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-chunk-pate-adultos-pollo-carne-e-higado-sobre-85-g-perro-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3665",
+  "slug": "shampoo-con-miconazol-y-clorhexidina-frasco-200-ml",
+  "name": "Shampoo con Miconazol y Clorhexidina",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "higiene",
+  "price": 7.0,
+  "description": "Producto de higiene DermaHealth para perros y gatos, frasco 200 ml. Sigue las indicaciones del empaque.",
+  "image": "/img/productos/shampoo-con-miconazol-y-clorhexidina-frasco-200-ml-perro-y-gato-higiene-y-cuidado.webp",
+  "brand": "DermaHealth",
+  "size": "Frasco 200 ml"
+ },
+ {
+  "sku": "CC-3666",
+  "slug": "shampoo-2-en-1-acondicionador-con-vitamina-e-tubo-200-ml",
+  "name": "Shampoo 2 en 1 + Acondicionador con Vitamina E",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "higiene",
+  "price": 4.5,
+  "description": "Producto de higiene DermaHealth para perros y gatos, tubo 200 ml. Sigue las indicaciones del empaque.",
+  "image": "/img/productos/shampoo-2-en-1-acondicionador-con-vitamina-e-tubo-200-ml-perro-y-gato-higiene-y-cuidado.webp",
+  "brand": "DermaHealth",
+  "size": "Tubo 200 ml"
+ },
+ {
+  "sku": "CC-3668",
+  "slug": "shampoo-con-clorhexidina-bano-sano-tubo-200-ml",
+  "name": "Shampoo con Clorhexidina, Baño sano",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "higiene",
+  "price": 4.5,
+  "description": "Producto de higiene DermaHealth para perros y gatos, tubo 200 ml. Sigue las indicaciones del empaque.",
+  "image": "/img/productos/shampoo-con-clorhexidina-bano-sano-tubo-200-ml-perro-y-gato-higiene-y-cuidado.webp",
+  "brand": "DermaHealth",
+  "size": "Tubo 200 ml"
+ },
+ {
+  "sku": "CC-3669",
+  "slug": "correa-trenzada-azul-y-negra-con-amortiguador-1-unidad",
+  "name": "Correa trenzada azul y negra con amortiguador",
+  "species": [
+   "perro"
+  ],
+  "category": "accesorios",
+  "price": 5.0,
+  "description": "Accesorio para perros, 1 unidad. Precio por unidad.",
+  "image": "/img/productos/correa-trenzada-azul-y-negra-con-amortiguador-1-unidad-perro-accesorios.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3670",
+  "slug": "huesitos-galletas-para-perros-sabor-arroz-con-carne-funda",
+  "name": "Huesitos, Galletas para perros sabor Arroz con Carne",
+  "species": [
+   "perro"
+  ],
+  "category": "snacks",
+  "price": 1.0,
+  "description": "Snack Mimma para perros, funda. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/huesitos-galletas-para-perros-sabor-arroz-con-carne-funda-perro-snacks-y-premios.webp",
+  "brand": "Mimma",
+  "size": "Funda"
+ },
+ {
+  "sku": "CC-3671",
+  "slug": "pro-can-rejos-con-colageno-sabor-carne-funda-8-unidades",
+  "name": "Pro-can Rejos con Colágeno sabor Carne",
+  "species": [
+   "perro"
+  ],
+  "category": "masticables",
+  "price": 1.4,
+  "description": "Masticable Pro-can para perros, funda 8 unidades. Supervisa a tu perro mientras lo mastica.",
+  "image": "/img/productos/pro-can-rejos-con-colageno-sabor-carne-funda-8-unidades-perro-masticables.webp",
+  "brand": "Pro-can",
+  "size": "Funda 8 unidades"
+ },
+ {
+  "sku": "CC-3672",
+  "slug": "carnitas-cream-sabor-cerdo-funda-4-sachets",
+  "name": "Carnitas Cream sabor Cerdo",
+  "species": [
+   "gato"
+  ],
+  "category": "snacks",
+  "price": 3.5,
+  "description": "Snack Carnitas para gatos, funda 4 sachets. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/carnitas-cream-sabor-cerdo-funda-4-sachets-gato-snacks-y-premios.webp",
+  "brand": "Carnitas",
+  "size": "Funda 4 sachets"
+ },
+ {
+  "sku": "CC-3673",
+  "slug": "varita-juguete-con-patito-1-unidad",
+  "name": "Varita juguete con patito",
+  "species": [
+   "gato"
+  ],
+  "category": "juguetes",
+  "price": 1.5,
+  "description": "Juguete Dongez para gatos. Precio por unidad.",
+  "image": "/img/productos/varita-juguete-con-patito-1-unidad-gato-juguetes.webp",
+  "brand": "Dongez",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3675",
+  "slug": "carnitas-snack-de-pollo-funda-30-g",
+  "name": "Carnitas Snack de Pollo",
+  "species": [
+   "perro"
+  ],
+  "category": "snacks",
+  "price": 1.2,
+  "description": "Snack Carnitas para perros, funda 30 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/carnitas-snack-de-pollo-funda-30-g-perro-snacks-y-premios.webp",
+  "brand": "Carnitas",
+  "size": "Funda 30 g"
+ },
+ {
+  "sku": "CC-3676",
+  "slug": "carnitas-snack-de-carne-funda-30-g",
+  "name": "Carnitas Snack de Carne",
+  "species": [
+   "perro"
+  ],
+  "category": "snacks",
+  "price": 1.2,
+  "description": "Snack Carnitas para perros, funda 30 g. Dalo como premio, sin reemplazar su comida diaria.",
+  "image": "/img/productos/carnitas-snack-de-carne-funda-30-g-perro-snacks-y-premios.webp",
+  "brand": "Carnitas",
+  "size": "Funda 30 g"
+ },
+ {
+  "sku": "CC-3677",
+  "slug": "correa-trenzada-roja-y-negra-con-amortiguador-1-unidad",
+  "name": "Correa trenzada roja y negra con amortiguador",
+  "species": [
+   "perro"
+  ],
+  "category": "accesorios",
+  "price": 5.0,
+  "description": "Accesorio para perros, 1 unidad. Precio por unidad.",
+  "image": "/img/productos/correa-trenzada-roja-y-negra-con-amortiguador-1-unidad-perro-accesorios.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3678",
+  "slug": "asuntol-jabon-antiparasitario-caja-100-g",
+  "name": "Asuntol Jabón antiparasitario",
+  "species": [
+   "perro"
+  ],
+  "category": "antiparasitarios",
+  "price": 5.0,
+  "description": "Antiparasitario Elanco para perros, caja 100 g. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/asuntol-jabon-antiparasitario-caja-100-g-perro-antiparasitarios.webp",
+  "brand": "Elanco",
+  "size": "Caja 100 g"
+ },
+ {
+  "sku": "CC-3679",
+  "slug": "doggimel-suplemento-nutricional-diario-funda-100-g",
+  "name": "Doggimel, Suplemento nutricional diario",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "suplementos",
+  "price": 5.5,
+  "description": "Suplemento Doggimel para perros y gatos, funda 100 g. Consulta a tu veterinario antes de agregarlo a su dieta.",
+  "image": "/img/productos/doggimel-suplemento-nutricional-diario-funda-100-g-perro-y-gato-suplementos.webp",
+  "brand": "Doggimel",
+  "size": "Funda 100 g"
+ },
+ {
+  "sku": "CC-3680",
+  "slug": "baby-pet-suplemento-piel-sana-y-pelo-brillante-funda-100-g",
+  "name": "Baby Pet, Suplemento piel sana y pelo brillante",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "suplementos",
+  "price": 3.5,
+  "description": "Suplemento Baby Pet para perros y gatos, funda 100 g. Consulta a tu veterinario antes de agregarlo a su dieta.",
+  "image": "/img/productos/baby-pet-suplemento-piel-sana-y-pelo-brillante-funda-100-g-perro-y-gato-suplementos.webp",
+  "brand": "Baby Pet",
+  "size": "Funda 100 g"
+ },
+ {
+  "sku": "CC-3681",
+  "slug": "sano-can-talco-antiparasitario-externo-frasco-60-g",
+  "name": "Sano Can, Talco antiparasitario externo",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "antiparasitarios",
+  "price": 3.0,
+  "description": "Antiparasitario Mascotas para perros y gatos, frasco 60 g. Úsalo según las indicaciones del empaque y consulta a tu veterinario la dosis adecuada para el peso de tu mascota.",
+  "image": "/img/productos/sano-can-talco-antiparasitario-externo-frasco-60-g-perro-y-gato-antiparasitarios.webp",
+  "brand": "Mascotas",
+  "size": "Frasco 60 g"
+ },
+ {
+  "sku": "CC-3682",
+  "slug": "shampoo-antipulgas-y-garrapatas-con-fipronil-frasco-200-ml",
+  "name": "Shampoo antipulgas y garrapatas con Fipronil",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "higiene",
+  "price": 7.5,
+  "description": "Producto de higiene DermaHealth para perros y gatos, frasco 200 ml. Sigue las indicaciones del empaque.",
+  "image": "/img/productos/shampoo-antipulgas-y-garrapatas-con-fipronil-frasco-200-ml-perro-y-gato-higiene-y-cuidado.webp",
+  "brand": "DermaHealth",
+  "size": "Frasco 200 ml",
+  "featured": true
+ },
+ {
+  "sku": "CC-3683",
+  "slug": "baby-pet-leche-para-mascotas-sobre-100-g",
+  "name": "Baby Pet, Leche para mascotas",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "suplementos",
+  "price": 3.5,
+  "description": "Suplemento Baby Pet para perros y gatos, sobre 100 g. Consulta a tu veterinario antes de agregarlo a su dieta.",
+  "image": "/img/productos/baby-pet-leche-para-mascotas-sobre-100-g-perro-y-gato-suplementos.webp",
+  "brand": "Baby Pet",
+  "size": "Sobre 100 g"
+ },
+ {
+  "sku": "CC-3684",
+  "slug": "nutrapro-gatos-pollo-e-higado-lata-85-g",
+  "name": "NutraPro Gatos Pollo e Hígado",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo NutraPro para gatos, lata 85 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-gatos-pollo-e-higado-lata-85-g-gato-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Lata 85 g"
+ },
+ {
+  "sku": "CC-3686",
+  "slug": "nutrapro-gatos-carne-e-higado-lata-85-g",
+  "name": "NutraPro Gatos Carne e Hígado",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo NutraPro para gatos, lata 85 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-gatos-carne-e-higado-lata-85-g-gato-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Lata 85 g"
+ },
+ {
+  "sku": "CC-3687",
+  "slug": "nutrapro-gatos-atun-y-tilapia-lata-85-g",
+  "name": "NutraPro Gatos Atún y Tilapia",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo NutraPro para gatos, lata 85 g. Precio por unidad.",
+  "image": "/img/productos/nutrapro-gatos-atun-y-tilapia-lata-85-g-gato-alimento-humedo.webp",
+  "brand": "NutraPro",
+  "size": "Lata 85 g"
+ },
+ {
+  "sku": "CC-3688",
+  "slug": "pure-nature-sabor-atun-lata-85-g",
+  "name": "Pure Nature sabor Atún",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Pure Nature para gatos, lata 85 g. Precio por unidad.",
+  "image": "/img/productos/pure-nature-sabor-atun-lata-85-g-gato-alimento-humedo.webp",
+  "brand": "Pure Nature",
+  "size": "Lata 85 g"
+ },
+ {
+  "sku": "CC-3689",
+  "slug": "pure-nature-sabor-higado-de-pollo-lata-85-g",
+  "name": "Pure Nature sabor Hígado de Pollo",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Pure Nature para gatos, lata 85 g. Precio por unidad.",
+  "image": "/img/productos/pure-nature-sabor-higado-de-pollo-lata-85-g-gato-alimento-humedo.webp",
+  "brand": "Pure Nature",
+  "size": "Lata 85 g"
+ },
+ {
+  "sku": "CC-3691",
+  "slug": "pure-nature-sabor-atun-y-camaron-lata-156-g",
+  "name": "Pure Nature sabor Atún y Camarón",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.8,
+  "description": "Alimento húmedo Pure Nature para gatos, lata 156 g. Precio por unidad.",
+  "image": "/img/productos/pure-nature-sabor-atun-y-camaron-lata-156-g-gato-alimento-humedo.webp",
+  "brand": "Pure Nature",
+  "size": "Lata 156 g"
+ },
+ {
+  "sku": "CC-3692",
+  "slug": "avant-adultos-res-vegetales-y-quinoa-sobre-85-g",
+  "name": "Avant Adultos Res, Vegetales y Quinoa",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Avant para perros, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/avant-adultos-res-vegetales-y-quinoa-sobre-85-g-perro-alimento-humedo.webp",
+  "brand": "Avant",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3693",
+  "slug": "avant-adultos-pollo-vegetales-y-quinoa-sobre-85-g",
+  "name": "Avant Adultos Pollo, Vegetales y Quinoa",
+  "species": [
+   "perro"
+  ],
+  "category": "alimento-humedo",
+  "price": 1.0,
+  "description": "Alimento húmedo Avant para perros, sobre 85 g. Precio por unidad.",
+  "image": "/img/productos/avant-adultos-pollo-vegetales-y-quinoa-sobre-85-g-perro-alimento-humedo.webp",
+  "brand": "Avant",
+  "size": "Sobre 85 g"
+ },
+ {
+  "sku": "CC-3694",
+  "slug": "juguete-raton-con-plumas-1-unidad",
+  "name": "Juguete ratón con plumas",
+  "species": [
+   "gato"
+  ],
+  "category": "juguetes",
+  "price": 1.25,
+  "description": "Juguete Bimba para gatos. Precio por unidad.",
+  "image": "/img/productos/juguete-raton-con-plumas-1-unidad-gato-juguetes.webp",
+  "brand": "Bimba",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3695",
+  "slug": "kit-de-cuidado-dental-cepillos-pasta-kit-con-pasta-70-g",
+  "name": "Kit de cuidado dental (cepillos + pasta)",
+  "species": [
+   "perro"
+  ],
+  "category": "higiene",
+  "price": 4.5,
+  "description": "Producto de higiene Yzhtbrush para perros, kit con pasta 70 g. Sigue las indicaciones del empaque.",
+  "image": "/img/productos/kit-de-cuidado-dental-cepillos-pasta-kit-con-pasta-70-g-perro-higiene-y-cuidado.webp",
+  "brand": "Yzhtbrush",
+  "size": "Kit con pasta 70 g"
+ },
+ {
+  "sku": "CC-3696",
+  "slug": "cepillo-removedor-de-pelo-1-unidad",
+  "name": "Cepillo removedor de pelo",
+  "species": [
+   "perro",
+   "gato"
+  ],
+  "category": "higiene",
+  "price": 3.0,
+  "description": "Producto de higiene para perros y gatos, 1 unidad. Sigue las indicaciones del empaque.",
+  "image": "/img/productos/cepillo-removedor-de-pelo-1-unidad-perro-y-gato-higiene-y-cuidado.webp",
+  "size": "1 unidad"
+ },
+ {
+  "sku": "CC-3697",
+  "slug": "nutrapro-gatitos-y-gatos-hasta-7-anos-funda-2-kg",
+  "name": "NutraPro Gatitos y Gatos hasta 7 años",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-seco",
+  "price": 8.0,
+  "description": "Alimento seco (croquetas) NutraPro para gatos, funda 2 kg.",
+  "image": "/img/productos/nutrapro-gatitos-y-gatos-hasta-7-anos-funda-2-kg-gato-alimento-seco.webp",
+  "brand": "NutraPro",
+  "size": "Funda 2 kg",
+  "featured": true
+ },
+ {
+  "sku": "CC-3698",
+  "slug": "nutrapro-gatos-esterilizados-y-control-de-peso-funda-2-kg",
+  "name": "NutraPro Gatos Esterilizados y Control de Peso",
+  "species": [
+   "gato"
+  ],
+  "category": "alimento-seco",
+  "price": 8.0,
+  "description": "Alimento seco (croquetas) NutraPro para gatos, funda 2 kg.",
+  "image": "/img/productos/nutrapro-gatos-esterilizados-y-control-de-peso-funda-2-kg-gato-alimento-seco.webp",
+  "brand": "NutraPro",
+  "size": "Funda 2 kg"
+ }
+]

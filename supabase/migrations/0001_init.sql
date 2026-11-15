@@ -338,3 +338,6 @@ create policy comprobantes_staff_read on storage.objects
 
 -- 0002: is_staff solo para usuarios autenticados
 revoke execute on function public.is_staff() from anon;
+
+-- 0003 (15 nov 2026): create_order siempre DESCUENTA centavos (antes sumaba si el subtotal era <= $1.50).
+-- Ver la versión vigente con: select pg_get_functiondef('public.create_order'::regproc);

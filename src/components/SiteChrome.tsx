@@ -17,7 +17,7 @@ export function Header() {
         Saltar al contenido
       </a>
       <div className="wrap header-row">
-        <Link href="/" className="brand" aria-label={`${SITE.name}, ir al inicio`}>
+        <Link href="/" className="brand">
           <img src="/img/isotipo-120.webp" alt="" width="64" height="48" />
           <span>
             <strong>Chip Chop</strong>

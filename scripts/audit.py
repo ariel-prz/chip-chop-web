@@ -12,7 +12,7 @@ from html.parser import HTMLParser
 
 ROOT = sys.argv[1] if len(sys.argv) > 1 else "out"
 SITE = "https://chipchoppetshop.com"
-PRIVATE = ("/panel/", "/checkout/", "/pedido/", "/carrito/", "/productos/proximamente/", "/404")
+PRIVATE = ("/panel/", "/checkout/", "/pedido/", "/carrito/", "/productos/proximamente/", "/404", "/conejos/", "/peces/")
 
 
 class Page(HTMLParser):

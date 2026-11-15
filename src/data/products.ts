@@ -3,20 +3,31 @@
 // Después sincroniza precios con Supabase: `npm run sync:sql` y ejecuta el SQL generado.
 // Regla: nunca publicar un precio o dato que no sea real.
 
+import catalog from "./catalog.json";
+
 export type Species = "perro" | "gato" | "conejo" | "pez";
-export type Category = "alimento" | "snacks" | "accesorios" | "higiene" | "acuario";
+export type Category =
+  | "alimento-seco"
+  | "alimento-humedo"
+  | "snacks"
+  | "masticables"
+  | "antiparasitarios"
+  | "suplementos"
+  | "higiene"
+  | "accesorios"
+  | "juguetes";
 
 export type Product = {
-  sku: string; // código interno único, sin espacios (ej. "ALI-PER-001")
-  slug: string; // URL legible (ej. "alimento-perro-adulto-raza-mediana-2kg")
+  sku: string; // código interno único: "CC-" + número de la foto original
+  slug: string; // URL legible
   name: string;
   brand?: string;
   species: Species[];
   category: Category;
-  price: number; // USD, IVA incluido
-  size?: string; // presentación: "2 kg", "500 g", "1 unidad"
-  description: string; // 1 a 3 frases útiles: para quién es y qué aporta
-  image?: string; // ruta en /public/img/productos/<slug>.webp (800x800)
+  price: number; // USD, precio de venta al público
+  size?: string; // presentación: "Funda 2 kg", "Sobre 85 g"
+  description: string;
+  image?: string; // /img/productos/<producto-presentacion-especie-categoria>.webp (800x800); existe también -400.webp
   featured?: boolean;
 };
 
@@ -28,16 +39,24 @@ export const SPECIES_LABEL: Record<Species, { singular: string; plural: string; 
 };
 
 export const CATEGORY_LABEL: Record<Category, string> = {
-  alimento: "Alimento",
+  "alimento-seco": "Alimento seco",
+  "alimento-humedo": "Alimento húmedo",
   snacks: "Snacks y premios",
-  accesorios: "Accesorios",
+  masticables: "Masticables",
+  antiparasitarios: "Antiparasitarios",
+  suplementos: "Suplementos",
   higiene: "Higiene y cuidado",
-  acuario: "Acuario",
+  accesorios: "Accesorios",
+  juguetes: "Juguetes",
 };
 
-export const PRODUCTS: Product[] = [
-  // TODO(Ariel): pegar aquí los productos reales.
-];
+// Catálogo generado desde el CSV con scripts/import_catalog.py. Para cambiar precios o
+// agregar productos, edita el CSV y vuelve a correr el script (o edita catalog.json).
+export const PRODUCTS: Product[] = catalog as Product[];
+
+export function thumbOf(image: string) {
+  return image.replace(/\.webp$/, "-400.webp");
+}
 
 export function productsBySpecies(s: Species) {
   return PRODUCTS.filter((p) => p.species.includes(s));

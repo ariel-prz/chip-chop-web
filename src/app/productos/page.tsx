@@ -22,7 +22,7 @@ export default function Catalogo() {
       <Breadcrumbs items={[{ name: "Productos", path: "/productos/" }]} />
       <h1>Productos para mascotas con precios en Quito</h1>
       <p>
-        Aquí están los productos que vendemos en Chip Chop Pet Shop con su precio final en dólares, IVA incluido.
+        Aquí están los productos que vendemos en Chip Chop Pet Shop con su precio en dólares.
         Puedes comprarlos en línea y pagar con Deuna, o pedirlos por WhatsApp. Si buscas algo que no ves en la
         lista, escríbenos: es posible que lo tengamos en el local.
       </p>
@@ -38,10 +38,10 @@ export default function Catalogo() {
       {categories.length === 0 ? (
         <ProductGrid products={[]} />
       ) : (
-        categories.map((c) => (
+        categories.map((c, i) => (
           <section key={c} aria-labelledby={`cat-${c}`}>
             <h2 id={`cat-${c}`}>{CATEGORY_LABEL[c]}</h2>
-            <ProductGrid products={PRODUCTS.filter((p) => p.category === c)} />
+            <ProductGrid products={PRODUCTS.filter((p) => p.category === c)} priority={i === 0} />
           </section>
         ))
       )}
