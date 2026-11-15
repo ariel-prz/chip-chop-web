@@ -35,7 +35,7 @@ export function CategoryRail() {
 export function MiniProduct({ p }: { p: Product }) {
   return (
     <li className="mini">
-      <Link href={`/productos/${p.slug}/`} className="mini-link">
+      <Link href={`/productos/${p.slug}/`} className="mini-link" prefetch={false}>
         {p.image && <img src={thumbOf(p.image)} alt={`${p.name}${p.size ? `, ${p.size}` : ""}`} width="400" height="400" loading="lazy" decoding="async" />}
         <span className="mini-species" aria-label={`Para ${p.species.map((s) => SPECIES_LABEL[s].plural).join(" y ")}`}>
           {p.species.map((s) => {

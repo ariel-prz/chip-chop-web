@@ -8,7 +8,7 @@ import { SITE, fullAddress, mapsLink, waLink } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Quiénes somos | Chip Chop Pet Shop, tienda familiar en Quito",
   description:
-    "Chip Chop Pet Shop es una tienda familiar de mascotas en Quito con local físico y permisos de funcionamiento. Conoce quién nos atiende y a Caramelo, nuestra mascota.",
+    "Chip Chop Pet Shop es una tienda familiar de mascotas en Quito, con local físico y permisos de funcionamiento. Conoce quién te atiende y a Caramelo.",
   path: "/nosotros/",
 });
 
@@ -59,6 +59,17 @@ export default function Nosotros() {
           loading="lazy"
         />
       </div>
+      <h2>¿Cómo compras con nosotros?</h2>
+      <p>
+        Puedes venir al local o comprar en línea. En la web armas tu carrito, pagas con Deuna el monto exacto que te
+        mostramos y el pago se valida en minutos. Luego retiras sin costo en la tienda o te lo enviamos a Quito Norte,
+        Centro, Sur o los Valles con un conductor de InDrive o Uber. <Link href="/como-comprar/">Así funciona la compra</Link>.
+      </p>
+      <h2>¿Dónde puedes aprender más sobre el cuidado de tu mascota?</h2>
+      <p>
+        En <Link href="/consejos-de-caramelo/">Consejos de Caramelo</Link>, nuestro blog, respondemos las preguntas
+        que más nos hacen en el local sobre alimentación, agua y antiparasitarios.
+      </p>
       <h2>¿Cómo contactarnos?</h2>
       <ul>
         <li>

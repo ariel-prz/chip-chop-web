@@ -3,9 +3,9 @@ import { pageMeta } from "@/lib/meta";
 import { SITE, fullAddress, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Política de privacidad | Chip Chop Pet Shop",
+  title: "Política de privacidad y datos | Chip Chop Pet Shop",
   description:
-    "Qué datos personales pide Chip Chop Pet Shop al comprar en línea, para qué los usa, cuánto tiempo los guarda y cómo ejercer tus derechos según la ley de Ecuador.",
+    "Qué datos personales pide Chip Chop Pet Shop al comprar en línea, para qué los usa, cuánto tiempo los guarda y cómo ejercer tus derechos según la ley.",
   path: "/privacidad/",
 });
 

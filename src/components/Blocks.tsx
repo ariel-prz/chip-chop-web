@@ -41,7 +41,7 @@ export function FaqList({ items, headingLevel = 3 }: { items: Faq[]; headingLeve
 export function ProductCard({ p, priority = false }: { p: Product; priority?: boolean }) {
   return (
     <li className="card">
-      <Link href={`/productos/${p.slug}/`} className="stretch">
+      <Link href={`/productos/${p.slug}/`} className="stretch" prefetch={false}>
         <div className="thumb">
           {p.image ? (
             <img

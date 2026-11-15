@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/meta";
 import { itemListSchema } from "@/lib/schema";
 
 export const metadata = pageMeta({
-  title: "Productos para mascotas con precios | Chip Chop Pet Shop Quito",
+  title: "Productos para mascotas con precios | Chip Chop Quito",
   description:
     "Catálogo con precios de alimento, snacks, accesorios e higiene para perros, gatos, conejos y peces. Compra en línea en Quito y paga con Deuna en minutos.",
   path: "/productos/",
@@ -45,6 +45,15 @@ export default function Catalogo() {
           </section>
         ))
       )}
+      <section aria-labelledby="h-como">
+        <h2 id="h-como">¿Cómo compro estos productos?</h2>
+        <p>
+          Agrega lo que necesitas al carrito, deja tu nombre y tu WhatsApp, y paga con Deuna el monto exacto que te
+          muestra el sitio. El pago se valida en minutos. Retiras sin costo en Serapio Japerabi y Miguel Pontón, todos
+          los días de 8:00 a 22:00, o lo recibes en Quito Norte, Centro, Sur o los Valles.{" "}
+          <Link href="/como-comprar/">Ver la guía para comprar y pagar con Deuna</Link>.
+        </p>
+      </section>
     </div>
   );
 }

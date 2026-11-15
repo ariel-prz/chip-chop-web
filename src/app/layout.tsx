@@ -11,7 +11,6 @@ import { SITE } from "@/lib/site";
 // Fuentes del manual de marca, servidas desde el propio sitio (sin pedir nada a Google).
 const bitter = localFont({
   src: [
-    { path: "../fonts/bitter-latin-600-normal.woff2", weight: "600" },
     { path: "../fonts/bitter-latin-700-normal.woff2", weight: "700" },
   ],
   variable: "--font-bitter",

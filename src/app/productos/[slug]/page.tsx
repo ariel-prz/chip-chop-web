@@ -21,17 +21,26 @@ export function generateStaticParams() {
 
 type Props = { params: Promise<{ slug: string }> };
 
-// Title de 30 a 60 caracteres: se elige la variante más completa que entra.
+// Title de 50 a 60 caracteres: se elige la primera variante que entra en el rango.
 function productTitle(name: string, size?: string) {
+  const n = size ? `${name} ${size}` : name;
   const options = [
-    size ? `${name} ${size} | Chip Chop Pet Shop` : "",
+    `${n} | Chip Chop Pet Shop Quito`,
+    `${n} | Chip Chop Pet Shop`,
+    `${n} en Quito | Chip Chop Pet Shop`,
+    `Comprar ${n} en Quito | Chip Chop Pet Shop`,
+    `${n} | Chip Chop`,
     `${name} | Chip Chop Pet Shop Quito`,
     `${name} | Chip Chop Pet Shop`,
+    `${name} en Quito | Chip Chop Pet Shop`,
+    `Comprar ${name} en Quito | Chip Chop Pet Shop`,
     `${name} | Chip Chop`,
-  ].filter(Boolean);
-  const fit = options.find((t) => t.length <= 60);
-  if (fit) return fit.length < 30 ? `${fit} en Quito` : fit;
-  return `${name.slice(0, 57).trimEnd()}...`;
+  ];
+  return (
+    options.find((t) => t.length >= 50 && t.length <= 60) ??
+    options.find((t) => t.length <= 60) ??
+    `${name.slice(0, 57).trimEnd()}...`
+  );
 }
 
 // Meta description de 140 a 160 caracteres con precio, presentación y forma de compra.
@@ -96,6 +105,8 @@ export default async function ProductPage({ params }: Props) {
           <div className="thumb">
             <img
               src={p.image ?? "/img/logo-480.webp"}
+              srcSet={p.image ? `${p.image.replace(/\.webp$/, "-400.webp")} 400w, ${p.image} 800w` : undefined}
+              sizes="(max-width: 760px) 228px, 520px"
               alt={p.image ? `${p.name}${p.size ? `, presentación ${p.size}` : ""}` : ""}
               width="600"
               height="600"

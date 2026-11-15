@@ -18,9 +18,9 @@ import { faqSchema } from "@/lib/schema";
 import { waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Seguros para mascotas en Ecuador: tipos y opciones | Chip Chop",
+  title: "Seguros para mascotas en Ecuador: tipos | Chip Chop",
   description:
-    "Qué tipos de seguro para perros y gatos existen en Ecuador, qué cubren y qué aseguradoras los ofrecen. Guía de Chip Chop Pet Shop, Quito, con enlaces a cada opción.",
+    "Qué tipos de seguro para perros y gatos existen en Ecuador, qué cubren y qué aseguradoras los ofrecen. Guía de Chip Chop Pet Shop con enlaces a cada una.",
   path: "/seguros-para-mascotas/",
 });
 

@@ -132,10 +132,10 @@ def main():
         t = pg.title.strip()
         titles.setdefault(t, []).append(route)
         if not private:
-            if not (30 <= len(t) <= 65):
+            if not (50 <= len(t) <= 60):
                 out.append(f"title {len(t)} chars: {t!r}")
             d = pg.meta.get("description", "")
-            if not (120 <= len(d) <= 165):
+            if not (140 <= len(d) <= 160):
                 out.append(f"description {len(d)} chars")
             for k in ("og:title", "og:description", "og:image"):
                 if not pg.meta.get(k):

@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Consejos de Caramelo | Blog de Chip Chop Pet Shop Quito",
   description:
-    "Guías cortas y prácticas para cuidar a tu perro o gato: cómo cambiar su alimento, cuánta agua necesita y cómo usar antiparasitarios. Por Chip Chop Pet Shop, Quito.",
+    "Guías cortas y prácticas para cuidar a tu perro o gato: cómo cambiar su alimento, cuánta agua necesita y cómo usar antiparasitarios. Por Chip Chop, Quito.",
   path: "/consejos-de-caramelo/",
 });
 

@@ -19,7 +19,7 @@ export const POSTS: BlogPost[] = [
     slug: "como-cambiar-el-alimento-de-tu-mascota",
     title: "Cómo cambiar el alimento de tu perro o gato",
     description:
-      "Guía de Caramelo para cambiar el alimento de tu perro o gato poco a poco: cuánto mezclar cada día, qué señales vigilar y cuándo ir al veterinario. Chip Chop, Quito.",
+      "Guía de Caramelo para cambiar el alimento de tu perro o gato poco a poco: cuánto mezclar cada día, qué señales vigilar y cuándo ir al veterinario.",
     summary:
       "Para cambiar el alimento de tu perro o gato, mezcla el nuevo con el anterior durante unos siete a diez días, aumentando poco a poco la proporción del nuevo. Así su estómago se adapta y evitas vómitos o diarrea. Si aparecen molestias que no pasan, consulta a tu veterinario.",
     datePublished: "2026-11-15",
@@ -61,7 +61,7 @@ export const POSTS: BlogPost[] = [
     slug: "agua-fresca-para-perros-y-gatos",
     title: "Agua fresca para tu perro o gato: guía práctica",
     description:
-      "Consejos de Caramelo para que tu perro o gato tome suficiente agua: dónde poner el plato, cada cuánto cambiarla y qué señales indican que debes ir al veterinario.",
+      "Consejos de Caramelo para que tu perro o gato tome suficiente agua: dónde poner el plato, cada cuánto cambiarla y cuándo conviene ir al veterinario.",
     summary:
       "Tu perro o gato debe tener agua limpia y fresca disponible todo el día, sobre todo si come alimento seco. Cambia el agua y lava el plato a diario, ponlo lejos de la comida y del arenero, y consulta al veterinario si notas que bebe mucho más o mucho menos de lo normal.",
     datePublished: "2026-11-15",
@@ -94,7 +94,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "antiparasitarios-para-perros-y-gatos",
-    title: "Antiparasitarios para perros y gatos: guía básica",
+    title: "Antiparasitarios para perros y gatos: guía breve",
     description:
       "Qué tipos de antiparasitarios hay para perros y gatos, por qué la dosis depende del peso y qué preguntarle al veterinario. Consejos de Caramelo, Chip Chop.",
     summary:

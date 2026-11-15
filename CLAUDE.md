@@ -66,6 +66,18 @@ retengan a la fuerza (nada de pop-ups, contadores falsos ni urgencia inventada).
 - **Colores en promociones:** fondo negro tinta con el dorado como superficie; el dorado nunca es
   color de texto.
 
+### Lecciones de la evaluación del enjambre (15 nov 2026)
+
+- Rangos estrictos: title 50 a 60 caracteres y description 140 a 160 en TODA página pública
+  (`scripts/audit.py` ya los exige).
+- Los enlaces a fichas de producto llevan `prefetch={false}`: el prefetch de Next precargaba la foto
+  grande de cada ficha y subía el LCP móvil en PageSpeed a 3.8 s.
+- Imágenes del hero con `srcSet` a medida (logo 320/480; estante de la vitrina `-160.webp`).
+- Los títulos del pie de página no son encabezados (`p.footer-title`), para no ensuciar la jerarquía.
+- El teléfono se muestra en formato local e internacional; zonas de envío siempre "Norte, Centro, Sur y Valles".
+- Pendiente de datos de Ariel: tarifas de envío por zona (AEO 9), reseñas reales y fotos del local
+  (AEO 10), URL canónica de Google Maps para `sameAs` (hoy es un enlace corto share.google).
+
 ### Diseño sin perder SEO/AEO (no negociable)
 
 - El H1 y el párrafo de respuesta directa van primero en el HTML y arriba en el teléfono; las imágenes

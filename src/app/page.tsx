@@ -14,7 +14,7 @@ import { SITE, fullAddress, mapsLink, waLink } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Chip Chop Pet Shop | Tienda de mascotas en Quito con envío",
   description:
-    "Alimento, snacks y accesorios para perros, gatos, conejos y peces en Quito. Compra en línea, paga con Deuna y retira en tienda o recibe en Norte, Sur y Valles.",
+    "Alimento, snacks y accesorios para perros y gatos en Quito. Compra en línea, paga con Deuna y retira en tienda o recibe en Norte, Centro, Sur y Valles.",
   path: "/",
 });
 
@@ -62,7 +62,7 @@ export default function Home() {
             <img
               className="vitrina-caramelo"
               src="/img/logo-320.webp"
-              srcSet="/img/logo-320.webp 320w, /img/logo-600.webp 600w"
+              srcSet="/img/logo-320.webp 320w, /img/logo-480.webp 480w"
               sizes="(max-width: 860px) 170px, 300px"
               width="300"
               height="300"
@@ -72,8 +72,15 @@ export default function Home() {
             <ul className="vitrina-shelf" aria-label="Algunos productos de la tienda">
               {shelf.map((p) => (
                 <li key={p.sku}>
-                  <Link href={`/productos/${p.slug}/`}>
-                    <img src={thumbOf(p.image!)} alt={p.name} width="160" height="160" />
+                  <Link href={`/productos/${p.slug}/`} prefetch={false}>
+                    <img
+                      src={p.image!.replace(/\.webp$/, "-160.webp")}
+                      srcSet={`${p.image!.replace(/\.webp$/, "-160.webp")} 160w, ${thumbOf(p.image!)} 400w`}
+                      sizes="(max-width: 860px) 80px, 130px"
+                      alt={p.name}
+                      width="160"
+                      height="160"
+                    />
                     <span>${p.price.toFixed(2)}</span>
                   </Link>
                 </li>

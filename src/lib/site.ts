@@ -7,7 +7,7 @@ export const SITE = {
   locale: "es-EC",
   description:
     "Pet shop en Quito con alimento y accesorios para perros, gatos, conejos y peces. Compra en línea, paga con Deuna y retira en tienda o recibe en tu casa.",
-  phoneDisplay: "099 525 2457",
+  phoneDisplay: "099 525 2457 (+593 99 525 2457)",
   phoneE164: "+593995252457",
   whatsapp: "593995252457",
   instagram: "https://www.instagram.com/chipchop_uio/",

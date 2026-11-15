@@ -82,7 +82,7 @@ export function Footer() {
       </div>
       <div className="wrap footer-grid">
         <section aria-labelledby="f-tienda">
-          <h2 id="f-tienda">{SITE.name}</h2>
+          <p className="footer-title" id="f-tienda">{SITE.name}</p>
           <address>
             <a href={mapsLink} rel="noopener" target="_blank">
               {fullAddress}
@@ -97,7 +97,7 @@ export function Footer() {
           </address>
         </section>
         <section aria-labelledby="f-links">
-          <h2 id="f-links">Compra</h2>
+          <p className="footer-title" id="f-links">Compra</p>
           <ul>
             <li><Link href="/productos/">Catálogo de productos</Link></li>
             <li><Link href="/como-comprar/">Cómo comprar y pagar con Deuna</Link></li>
@@ -107,7 +107,7 @@ export function Footer() {
           </ul>
         </section>
         <section aria-labelledby="f-info">
-          <h2 id="f-info">La tienda</h2>
+          <p className="footer-title" id="f-info">La tienda</p>
           <ul>
             <li><Link href="/nosotros/">Quiénes somos</Link></li>
             <li><Link href="/consejos-de-caramelo/">Consejos de Caramelo</Link></li>

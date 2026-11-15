@@ -46,6 +46,7 @@ export function businessSchema() {
       contactType: "customer service",
       availableLanguage: "es",
     },
+    hasMap: SITE.googleBusiness || undefined,
     sameAs,
   };
 }

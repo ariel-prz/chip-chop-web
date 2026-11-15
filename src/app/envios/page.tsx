@@ -6,7 +6,7 @@ import { faqSchema } from "@/lib/schema";
 import { SITE, ZONES, fullAddress, mapsLink, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Envíos de productos para mascotas en Quito y Valles | Chip Chop",
+  title: "Envíos para mascotas en Quito y los Valles | Chip Chop",
   description:
     "Enviamos a Quito Norte, Centro, Sur y a los Valles con InDrive o Uber. El costo depende de tu sector y lo confirmas por WhatsApp. Retiro en tienda sin costo.",
   path: "/envios/",

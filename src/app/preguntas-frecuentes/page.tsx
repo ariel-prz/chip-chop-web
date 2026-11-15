@@ -8,7 +8,7 @@ import { waLink } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Preguntas frecuentes | Chip Chop Pet Shop, mascotas en Quito",
   description:
-    "Respuestas sobre horario, ubicación, pagos con Deuna, montos con centavos, envíos en Quito y Valles y retiro en tienda en Chip Chop Pet Shop. Todo en un solo lugar.",
+    "Respuestas sobre horario, ubicación, pagos con Deuna, montos con centavos, envíos en Quito y Valles y retiro en tienda en Chip Chop Pet Shop, Quito.",
   path: "/preguntas-frecuentes/",
 });
 
