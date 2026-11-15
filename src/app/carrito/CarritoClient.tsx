@@ -1,5 +1,7 @@
 "use client";
 
+import { PromoNotice } from "@/components/Engage";
+import { BLACK_FRIDAY } from "@/data/promos";
 import Link from "next/link";
 import { useCart } from "@/components/Cart";
 import { formatUSD } from "@/lib/format";
@@ -55,6 +57,11 @@ export function CarritoClient() {
       <p className="amount" style={{ fontSize: "1.8rem", marginTop: "1rem" }}>
         Total de productos: {formatUSD(total)}
       </p>
+      <PromoNotice
+        from={BLACK_FRIDAY.startsAt}
+        to={BLACK_FRIDAY.endsAt}
+        text={`Black Friday activo: el ${BLACK_FRIDAY.pct} % de descuento en alimento seco se resta al generar tu pedido.`}
+      />
       <p className="hint">El envío, si lo eliges, se cotiza aparte por WhatsApp.</p>
       <div className="btn-row">
         <Link className="btn btn-primary" href="/checkout/">

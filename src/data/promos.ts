@@ -7,10 +7,14 @@ export type PromoItem = { label: string; detail: string; href?: string };
 export const BLACK_FRIDAY = {
   active: true,
   title: "Black Friday en Chip Chop",
-  // Viernes 27 de noviembre de 2026, hora de Quito
+  // Viernes 27 de noviembre de 2026, hora de Quito. Debe coincidir con public.promotions
+  // (id "black-friday-2026") en Supabase: el servidor aplica el descuento con esas fechas.
   startsAt: "2026-11-27T00:00:00-05:00",
-  dateLabel: "Viernes 27 de noviembre de 2026",
-  intro: "Confirmado por la tienda: descuento en todo el alimento seco, para perros y gatos.",
+  endsAt: "2026-11-27T23:59:59-05:00",
+  category: "alimento-seco",
+  pct: 10,
+  dateLabel: "Viernes 27 de noviembre de 2026, de 00:00 a 23:59",
+  intro: "El descuento se aplica solo al generar tu pedido, en línea o en la tienda.",
   items: [
     {
       label: "10 % de descuento",

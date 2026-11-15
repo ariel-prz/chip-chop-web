@@ -341,3 +341,6 @@ revoke execute on function public.is_staff() from anon;
 
 -- 0003 (15 nov 2026): create_order siempre DESCUENTA centavos (antes sumaba si el subtotal era <= $1.50).
 -- Ver la versión vigente con: select pg_get_functiondef('public.create_order'::regproc);
+
+-- 0004 (15 nov 2026): public.promotions + products.category; create_order aplica el descuento
+-- vigente por categoría. Black Friday 2026: 10 % alimento-seco, 27 nov 00:00 a 23:59 (-05).

@@ -1,5 +1,7 @@
 "use client";
 
+import { PromoNotice } from "@/components/Engage";
+import { BLACK_FRIDAY } from "@/data/promos";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -150,6 +152,11 @@ export function CheckoutClient() {
           ))}
         </ul>
         <p className="price">Total productos: {formatUSD(total)}</p>
+      <PromoNotice
+        from={BLACK_FRIDAY.startsAt}
+        to={BLACK_FRIDAY.endsAt}
+        text={`Black Friday activo: el ${BLACK_FRIDAY.pct} % de descuento en alimento seco se resta al generar tu pedido.`}
+      />
         <p className="hint">
           En el siguiente paso verás el monto exacto a pagar: tendrá unos centavos menos, para identificar tu pago.
         </p>

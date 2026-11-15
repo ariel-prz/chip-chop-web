@@ -181,9 +181,9 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; min-hei
 .hero-facts { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .55rem; }
 .hero-facts li { display: flex; gap: .6rem; align-items: center; font-weight: 700; }
 .hero-facts svg { color: var(--azul); width: 22px; height: 22px; flex: none; }
-.vitrina { position: relative; display: grid; justify-items: center; }
-.vitrina::before { content: ""; position: absolute; inset: 12% 2% 0; background: var(--crema); border-radius: 50% 50% 24px 24px / 38% 38% 24px 24px; }
-.vitrina-caramelo { position: relative; width: min(300px, 70%); margin-bottom: -1.2rem; }
+.vitrina { position: relative; display: grid; justify-items: center; gap: 1.4rem; }
+.vitrina::before { content: ""; position: absolute; inset: 14% 2% 0; background: var(--crema); border-radius: 50% 50% 24px 24px / 38% 38% 24px 24px; }
+.vitrina-caramelo { position: relative; width: min(300px, 70%); margin-top: -1rem; }
 .vitrina-shelf { position: relative; list-style: none; margin: 0; padding: 1rem .9rem .9rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; width: 100%; background: var(--azul); border-radius: 18px; box-shadow: 0 14px 0 -6px var(--cafe); }
 .vitrina-shelf a { display: block; background: var(--blanco); border-radius: 12px; padding: .3rem; text-decoration: none; text-align: center; color: var(--tinta); }
 .vitrina-shelf a:hover { outline: 3px solid var(--dorado); }
@@ -263,9 +263,16 @@ input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; min-hei
 .bf-link { color: var(--tinta); font-weight: 700; }
 .bf-link:hover { color: var(--tinta); }
 .bf-side { display: grid; gap: .7rem; justify-items: center; }
-.countdown { display: flex; gap: .5rem; margin: 0; }
-.countdown span { background: #1b2630; border-radius: 12px; padding: .5rem .7rem; text-align: center; min-width: 70px; color: var(--crema); font-size: .85rem; }
-.countdown strong { display: block; font-size: 1.6rem; color: var(--blanco); font-family: var(--serif); }
+.countdowns { display: grid; gap: .6rem; }
+.countdown { display: grid; gap: .25rem; }
+.countdown-label { font-weight: 700; color: var(--crema); font-size: .9rem; }
+.countdown-units { display: flex; gap: .35rem; }
+.countdown-units > span { background: #1b2630; border-radius: 10px; padding: .35rem .45rem; text-align: center; min-width: 56px; color: var(--crema); font-size: .75rem; }
+.countdown-units strong { display: block; font-size: 1.35rem; color: var(--blanco); font-family: var(--serif); font-variant-numeric: tabular-nums; }
+.countdown-done { color: var(--crema); margin: 0; }
+.promo-badge { display: inline-block; align-self: flex-start; background: var(--tinta); color: var(--blanco); font-weight: 700; font-size: .78rem; padding: .2rem .55rem; border-radius: 999px; margin: 0; }
+p.promo-badge { font-size: .9rem; border-radius: 10px; padding: .4rem .7rem; margin: .2rem 0 .6rem; }
+.promo-notice { background: var(--tinta); color: var(--blanco); padding: .7rem 1rem; border-radius: 12px; font-weight: 700; }
 @media (max-width: 960px) { .bf-grid { grid-template-columns: 1fr; text-align: left; } .bf-side { justify-items: start; } }
 
 /* Barra inferior en el teléfono */

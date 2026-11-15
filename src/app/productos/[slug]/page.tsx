@@ -7,6 +7,7 @@ import { CATEGORY_LABEL, formatUSD, PRODUCTS, SPECIES_LABEL } from "@/data/produ
 import { pageMeta } from "@/lib/meta";
 import { productSchema } from "@/lib/schema";
 import { SITE, waLink } from "@/lib/site";
+import { BLACK_FRIDAY } from "@/data/promos";
 
 export const dynamicParams = false;
 
@@ -105,6 +106,12 @@ export default async function ProductPage({ params }: Props) {
         <div>
           <h1>{p.name}</h1>
           <p className="price amount">{formatUSD(p.price)}</p>
+          {BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category && (
+            <p className="promo-badge">
+              Black Friday, viernes 27 de noviembre: {BLACK_FRIDAY.pct} % de descuento,{" "}
+              {formatUSD(Math.round(p.price * (100 - BLACK_FRIDAY.pct)) / 100)} ese día
+            </p>
+          )}
           <p>{p.description}</p>
           <table>
             <tbody>

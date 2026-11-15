@@ -48,8 +48,11 @@ retengan a la fuerza (nada de pop-ups, contadores falsos ni urgencia inventada).
   Caramelo (`CarameloTips`), productos relacionados en cada ficha, enlaces internos descriptivos.
 - **Promociones:** franja `BlackFridayBand` sobre el pie, alimentada por `src/data/promos.ts`.
   Solo descuentos confirmados por Ariel. Cuenta regresiva real hacia `startsAt`.
-  Vigente: 10 % en todo el alimento seco desde el viernes 27 nov 2026 (el descuento aún NO se
-  aplica automáticamente en `create_order`; implementarlo antes de esa fecha o aplicarlo a mano).
+  Vigente: 10 % en todo el alimento seco el viernes 27 nov 2026, de 00:00 a 23:59 (hora de Quito).
+  El descuento lo aplica el servidor: `create_order` busca en `public.promotions` (id
+  `black-friday-2026`) una promoción vigente para la `category` del producto y guarda en cada ítem
+  `price` (con descuento), `list_price` y `discount_pct`. Las fechas de `promos.ts` y de
+  `public.promotions` deben coincidir. La franja muestra dos cuentas regresivas (empieza / termina).
 - **Movimiento:** casi nada. Sin animaciones de entrada por sección. Respetar `prefers-reduced-motion`.
 - **Colores en promociones:** fondo negro tinta con el dorado como superficie; el dorado nunca es
   color de texto.

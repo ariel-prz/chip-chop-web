@@ -6,31 +6,55 @@ import { ChevronLeft, ChevronRight, House, LayoutGrid, MessageCircle, ShoppingCa
 import { useCart } from "@/components/Cart";
 import { waLink } from "@/lib/site";
 
-// Cuenta regresiva: el HTML trae la fecha escrita (para bots y sin JavaScript);
-// al cargar, el navegador agrega los días que faltan.
-export function Countdown({ to }: { to: string }) {
-  const [left, setLeft] = useState<{ d: number; h: number } | null>(null);
-  useEffect(() => {
-    const tick = () => {
-      const ms = new Date(to).getTime() - Date.now();
-      setLeft(ms > 0 ? { d: Math.floor(ms / 864e5), h: Math.floor((ms % 864e5) / 36e5) } : { d: 0, h: 0 });
-    };
-    tick();
-    const t = setInterval(tick, 60_000);
-    return () => clearInterval(t);
-  }, [to]);
-  if (!left) return null;
-  if (left.d === 0 && left.h === 0) return <p className="countdown">¡Ya empezó!</p>;
+// Cuenta regresiva: el HTML trae las fechas escritas (para bots y sin JavaScript);
+// al cargar, el navegador muestra cuánto falta para que empiece y para que termine.
+function parts(ms: number) {
+  const t = Math.max(0, Math.floor(ms / 1000));
+  return { d: Math.floor(t / 86400), h: Math.floor((t % 86400) / 3600), m: Math.floor((t % 3600) / 60), s: t % 60 };
+}
+
+function Clock({ label, ms }: { label: string; ms: number }) {
+  const { d, h, m, s } = parts(ms);
   return (
-    <p className="countdown" aria-live="polite">
-      <span>
-        <strong>{left.d}</strong> días
+    <div className="countdown">
+      <span className="countdown-label">{label}</span>
+      <span className="countdown-units">
+        <span><strong>{d}</strong> días</span>
+        <span><strong>{h}</strong> horas</span>
+        <span><strong>{m}</strong> min</span>
+        <span><strong>{String(s).padStart(2, "0")}</strong> seg</span>
       </span>
-      <span>
-        <strong>{left.h}</strong> horas
-      </span>
-    </p>
+    </div>
   );
+}
+
+export function Countdown({ from, to }: { from: string; to: string }) {
+  const [now, setNow] = useState<number | null>(null);
+  useEffect(() => {
+    setNow(Date.now());
+    const t = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  if (now === null) return null;
+  const start = new Date(from).getTime();
+  const end = new Date(to).getTime();
+  if (now >= end) return <p className="countdown-done">Black Friday terminó. Gracias por comprar en Chip Chop.</p>;
+  return (
+    <div className="countdowns" role="timer" aria-live="off">
+      {now < start && <Clock label="Empieza en" ms={start - now} />}
+      <Clock label={now < start ? "Termina en" : "Termina en (¡ya empezó!)"} ms={end - now} />
+    </div>
+  );
+}
+
+// Aviso en carrito y checkout cuando la promoción está activa en este momento.
+export function PromoNotice({ from, to, text }: { from: string; to: string; text: string }) {
+  const [active, setActive] = useState(false);
+  useEffect(() => {
+    const n = Date.now();
+    setActive(n >= new Date(from).getTime() && n <= new Date(to).getTime());
+  }, [from, to]);
+  return active ? <p className="promo-notice">{text}</p> : null;
 }
 
 // Flechas del carrusel: en el teléfono se desliza con el dedo; en computadora, con estos botones.

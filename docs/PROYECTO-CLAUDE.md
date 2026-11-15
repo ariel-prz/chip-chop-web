@@ -60,8 +60,9 @@ Reglas:
    carruseles y consejos de Caramelo para que exploren más. Sin pop-ups ni urgencia
    inventada. El diseño nunca tapa el SEO/AEO: H1 y respuesta directa primero, texto real
    (no en imágenes), Lighthouse móvil 90+.
-9. Promociones: solo descuentos que yo confirme. Vigente: Black Friday desde el viernes
-   27 nov 2026, 10 % en todo el alimento seco.
+9. Promociones: solo descuentos que yo confirme. Vigente: Black Friday el viernes 27 nov
+   2026 (00:00 a 23:59), 10 % en todo el alimento seco, aplicado automáticamente por el
+   servidor (tabla public.promotions).
 ```
 
 ## 3. Seguir con Claude Code cuando se acaben los créditos de Hostinger

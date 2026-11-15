@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { AddToCart } from "@/components/Cart";
+import { BLACK_FRIDAY } from "@/data/promos";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Faq } from "@/data/faq";
 import { CATEGORY_LABEL, formatUSD, SPECIES_LABEL, thumbOf, type Product } from "@/data/products";
@@ -63,6 +64,9 @@ export function ProductCard({ p, priority = false }: { p: Product; priority?: bo
         {p.size ? ` · ${p.size}` : ""}
       </p>
       <p className="price">{formatUSD(p.price)}</p>
+      {BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category && (
+        <p className="promo-badge">-{BLACK_FRIDAY.pct} % en Black Friday, 27 nov</p>
+      )}
       <AddToCart sku={p.sku} name={p.name} price={p.price} slug={p.slug} />
     </li>
   );

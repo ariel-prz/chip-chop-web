@@ -43,6 +43,9 @@ export function MiniProduct({ p }: { p: Product }) {
             return <I key={s} aria-hidden="true" size={16} />;
           })}
         </span>
+        {BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category && (
+          <span className="promo-badge">-{BLACK_FRIDAY.pct} % el 27 nov</span>
+        )}
         <span className="mini-cat">{CATEGORY_LABEL[p.category]}</span>
         <span className="mini-name">{p.name}</span>
         {p.size && <span className="mini-size">{p.size}</span>}
@@ -138,7 +141,7 @@ export function BlackFridayBand() {
           ))}
         </ul>
         <div className="bf-side">
-          <Countdown to={bf.startsAt} />
+          <Countdown from={bf.startsAt} to={bf.endsAt} />
           <a className="btn btn-gold" href={waLink("Hola Chip Chop, quiero apartar mi alimento para Black Friday")} target="_blank" rel="noopener">
             <MessageCircle aria-hidden="true" size={20} /> Apartar por WhatsApp
           </a>
