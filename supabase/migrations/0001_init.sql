@@ -343,4 +343,4 @@ revoke execute on function public.is_staff() from anon;
 -- Ver la versión vigente con: select pg_get_functiondef('public.create_order'::regproc);
 
 -- 0004 (15 nov 2026): public.promotions + products.category; create_order aplica el descuento
--- vigente por categoría. Black Friday 2026: 10 % alimento-seco, 27 nov 00:00 a 23:59 (-05).
+-- vigente por categoría. Black Friday 2026: 10 % alimento-seco, 15 nov 12:50 a 27 nov 23:59 (-05).

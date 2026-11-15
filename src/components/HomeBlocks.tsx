@@ -3,7 +3,7 @@ import { BadgePercent, CalendarDays, Droplets, MessageCircle, Repeat, Stethoscop
 import { AddToCart } from "@/components/Cart";
 import { CarouselNav, Countdown } from "@/components/Engage";
 import { CATEGORY_ICON, SPECIES_ICON } from "@/components/Icons";
-import { BLACK_FRIDAY } from "@/data/promos";
+import { BLACK_FRIDAY, promoPrice } from "@/data/promos";
 import { CATEGORY_LABEL, formatUSD, PRODUCTS, SPECIES_LABEL, thumbOf, type Category, type Product } from "@/data/products";
 import { waLink } from "@/lib/site";
 
@@ -44,13 +44,19 @@ export function MiniProduct({ p }: { p: Product }) {
           })}
         </span>
         {BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category && (
-          <span className="promo-badge">-{BLACK_FRIDAY.pct} % el 27 nov</span>
+          <span className="promo-badge">-{BLACK_FRIDAY.pct} % Black Friday</span>
         )}
         <span className="mini-cat">{CATEGORY_LABEL[p.category]}</span>
         <span className="mini-name">{p.name}</span>
         {p.size && <span className="mini-size">{p.size}</span>}
       </Link>
-      <span className="mini-price">{formatUSD(p.price)}</span>
+      {BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category ? (
+        <span className="mini-price">
+          {formatUSD(promoPrice(p.price, BLACK_FRIDAY.pct))} <s>{formatUSD(p.price)}</s>
+        </span>
+      ) : (
+        <span className="mini-price">{formatUSD(p.price)}</span>
+      )}
       <AddToCart sku={p.sku} name={p.name} price={p.price} slug={p.slug} />
     </li>
   );

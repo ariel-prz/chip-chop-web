@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Clock, MapPin, QrCode, Truck } from "lucide-react";
 import { BuySteps, FaqList } from "@/components/Blocks";
 import { CarameloTips, CategoryRail, ProductCarousel } from "@/components/HomeBlocks";
+import { BackToTop } from "@/components/Engage";
 import { SPECIES_ICON } from "@/components/Icons";
 import { JsonLd } from "@/components/JsonLd";
 import { FAQ_GENERAL } from "@/data/faq";
@@ -122,8 +123,8 @@ export default function Home() {
         <section className="section" aria-labelledby="h-seco">
           <h2 id="h-seco">¿Qué alimento seco tienen para perros y gatos?</h2>
           <p>
-            Fundas de 2 kg de NutraPro para cachorros, adultos y gatos, además de Cat Chow. Desde el viernes 27 de
-            noviembre, Black Friday: 10 % de descuento en todo el alimento seco.
+            Fundas de 2 kg de NutraPro para cachorros, adultos y gatos, además de Cat Chow. Black Friday ya empezó:
+            10 % de descuento en todo el alimento seco hasta el viernes 27 de noviembre.
           </p>
           <ProductCarousel id="car-seco" products={dry} />
         </section>
@@ -193,6 +194,7 @@ export default function Home() {
         </section>
         <p className="updated">Información actualizada el 15 de noviembre de 2026.</p>
       </div>
+      <BackToTop />
     </>
   );
 }

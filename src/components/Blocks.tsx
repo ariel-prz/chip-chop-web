@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { AddToCart } from "@/components/Cart";
-import { BLACK_FRIDAY } from "@/data/promos";
+import { BLACK_FRIDAY, promoPrice } from "@/data/promos";
 import { breadcrumbSchema } from "@/lib/schema";
 import type { Faq } from "@/data/faq";
 import { CATEGORY_LABEL, formatUSD, SPECIES_LABEL, thumbOf, type Product } from "@/data/products";
@@ -63,9 +63,15 @@ export function ProductCard({ p, priority = false }: { p: Product; priority?: bo
         {CATEGORY_LABEL[p.category]} para {p.species.map((s) => SPECIES_LABEL[s].plural).join(", ")}
         {p.size ? ` · ${p.size}` : ""}
       </p>
-      <p className="price">{formatUSD(p.price)}</p>
-      {BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category && (
-        <p className="promo-badge">-{BLACK_FRIDAY.pct} % en Black Friday, 27 nov</p>
+      {BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category ? (
+        <>
+          <p className="price">
+            {formatUSD(promoPrice(p.price, BLACK_FRIDAY.pct))} <s>{formatUSD(p.price)}</s>
+          </p>
+          <p className="promo-badge">-{BLACK_FRIDAY.pct} % Black Friday, hasta el 27 nov</p>
+        </>
+      ) : (
+        <p className="price">{formatUSD(p.price)}</p>
       )}
       <AddToCart sku={p.sku} name={p.name} price={p.price} slug={p.slug} />
     </li>

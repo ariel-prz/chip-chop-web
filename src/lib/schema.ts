@@ -1,6 +1,7 @@
 import { SITE, fullAddress } from "@/lib/site";
 import type { Faq } from "@/data/faq";
 import type { Product } from "@/data/products";
+import { BLACK_FRIDAY, promoPrice } from "@/data/promos";
 
 const BIZ_ID = `${SITE.url}/#tienda`;
 
@@ -87,6 +88,9 @@ export function breadcrumbSchema(items: { name: string; path: string }[]) {
 }
 
 export function productSchema(p: Product) {
+  // Durante la promoción, el precio del schema es el que se cobra, con fecha de vencimiento.
+  const promo = BLACK_FRIDAY.active && p.category === BLACK_FRIDAY.category;
+  const price = promo ? promoPrice(p.price, BLACK_FRIDAY.pct) : p.price;
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -98,8 +102,9 @@ export function productSchema(p: Product) {
     url: `${SITE.url}/productos/${p.slug}/`,
     offers: {
       "@type": "Offer",
-      price: p.price.toFixed(2),
+      price: price.toFixed(2),
       priceCurrency: "USD",
+      ...(promo ? { priceValidUntil: BLACK_FRIDAY.endsAt.slice(0, 10) } : {}),
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
       url: `${SITE.url}/productos/${p.slug}/`,

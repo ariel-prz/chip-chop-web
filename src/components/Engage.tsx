@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight, House, LayoutGrid, MessageCircle, ShoppingCart } from "lucide-react";
+import { ArrowUp, ChevronLeft, ChevronRight, House, LayoutGrid, MessageCircle, ShoppingCart } from "lucide-react";
 import { useCart } from "@/components/Cart";
 import { waLink } from "@/lib/site";
 
@@ -104,5 +104,32 @@ export function MobileTabBar() {
         <span>WhatsApp</span>
       </a>
     </nav>
+  );
+}
+
+// Botón para volver arriba: aparece cuando la persona ya bajó bastante.
+export function BackToTop() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShow(window.scrollY > 1400);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  if (!show) return null;
+  return (
+    <button
+      type="button"
+      className="to-top"
+      onClick={() => {
+        const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+        document.querySelector("h1")?.setAttribute("tabindex", "-1");
+        (document.querySelector("h1") as HTMLElement | null)?.focus({ preventScroll: true });
+      }}
+    >
+      <ArrowUp aria-hidden="true" />
+      <span>Subir</span>
+    </button>
   );
 }
