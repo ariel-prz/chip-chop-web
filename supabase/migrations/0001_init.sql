@@ -335,3 +335,6 @@ create policy comprobantes_upload on storage.objects
 create policy comprobantes_staff_read on storage.objects
   for select to authenticated
   using (bucket_id = 'comprobantes' and public.is_staff());
+
+-- 0002: is_staff solo para usuarios autenticados
+revoke execute on function public.is_staff() from anon;
