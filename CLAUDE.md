@@ -46,7 +46,9 @@ retengan a la fuerza (nada de pop-ups, contadores falsos ni urgencia inventada).
   táctiles de 44 px mínimo; botones grandes `btn-lg` en acciones principales.
 - **Permanencia:** carruseles de productos con scroll-snap (`ProductCarousel`), consejos de
   Caramelo (`CarameloTips`), productos relacionados en cada ficha, enlaces internos descriptivos.
-- **Promociones:** franja `BlackFridayBand` sobre el pie, alimentada por `src/data/promos.ts`.
+- **Promociones:** franja compacta `BlackFridayBand` (una fila, ~100 px de alto en escritorio), solo en la
+  portada como sección 2, entre la vitrina y "¿Qué buscas para tu mascota?". Datos en `src/data/promos.ts`.
+  La cuenta regresiva dibuja su espacio con guiones antes de cargar para mantener CLS en 0.
   Solo descuentos confirmados por Ariel. Cuenta regresiva real hacia `startsAt`.
   Vigente: 10 % en todo el alimento seco desde el 15 nov 2026 12:50 hasta el viernes 27 nov 2026 23:59
   (hora de Quito). Las tarjetas y fichas muestran el precio con descuento y el schema `Offer` usa ese

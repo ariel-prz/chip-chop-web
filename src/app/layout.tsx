@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { CartProvider } from "@/components/Cart";
 import { Footer, Header, WhatsAppFab } from "@/components/SiteChrome";
-import { BlackFridayBand } from "@/components/HomeBlocks";
 import { MobileTabBar } from "@/components/Engage";
 import { JsonLd } from "@/components/JsonLd";
 import { businessSchema, websiteSchema } from "@/lib/schema";
@@ -53,7 +52,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CartProvider>
           <Header />
           <main id="contenido">{children}</main>
-          <BlackFridayBand />
           <Footer />
           <WhatsAppFab />
           <MobileTabBar />

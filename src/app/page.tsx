@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Clock, MapPin, QrCode, Truck } from "lucide-react";
 import { BuySteps, FaqList } from "@/components/Blocks";
-import { CarameloTips, CategoryRail, ProductCarousel } from "@/components/HomeBlocks";
+import { BlackFridayBand, CarameloTips, CategoryRail, ProductCarousel } from "@/components/HomeBlocks";
 import { BackToTop } from "@/components/Engage";
 import { SPECIES_ICON } from "@/components/Icons";
 import { JsonLd } from "@/components/JsonLd";
@@ -80,6 +80,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BlackFridayBand />
 
       <div className="wrap">
         <section className="section" aria-labelledby="h-cats">

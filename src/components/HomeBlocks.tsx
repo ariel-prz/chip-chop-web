@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BadgePercent, CalendarDays, Droplets, MessageCircle, Repeat, Stethoscope } from "lucide-react";
+import { Droplets, MessageCircle, Repeat, Stethoscope } from "lucide-react";
 import { AddToCart } from "@/components/Cart";
 import { CarouselNav, Countdown } from "@/components/Engage";
 import { CATEGORY_ICON, SPECIES_ICON } from "@/components/Icons";
@@ -116,42 +116,29 @@ export function CarameloTips() {
   );
 }
 
-// Franja de Black Friday, visible en todo el sitio antes del pie de página.
+// Franja de Black Friday, compacta: segunda sección de la portada.
 export function BlackFridayBand() {
   if (!BLACK_FRIDAY.active) return null;
   const bf = BLACK_FRIDAY;
   return (
     <section className="bf" aria-labelledby="bf-title">
-      <div className="wrap bf-grid">
-        <div className="bf-tag" aria-hidden="true">
-          <BadgePercent size={40} strokeWidth={1.75} />
-        </div>
-        <div>
-          <h2 id="bf-title">{bf.title}</h2>
-          <p className="bf-date">
-            <CalendarDays aria-hidden="true" size={18} /> {bf.dateLabel}
+      <div className="wrap bf-row">
+        <span className="bf-pct" aria-hidden="true">
+          -{bf.pct}%
+        </span>
+        <div className="bf-text">
+          <h2 id="bf-title">Black Friday: {bf.pct} % en todo el alimento seco</h2>
+          <p>
+            Hasta el viernes 27 de noviembre a las 23:59. Se descuenta solo al generar tu pedido.{" "}
+            <Link href="/productos/#cat-alimento-seco" className="bf-link">
+              Ver alimento seco
+            </Link>
           </p>
-          <p>{bf.intro}</p>
         </div>
-        <ul className="bf-offers">
-          {bf.items.map((it) => (
-            <li key={it.label}>
-              <strong>{it.label}</strong>
-              <span>{it.detail}</span>
-              {it.href && (
-                <Link href={it.href} className="bf-link">
-                  Ver el alimento seco
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
-        <div className="bf-side">
-          <Countdown from={bf.startsAt} to={bf.endsAt} />
-          <a className="btn btn-gold" href={waLink("Hola Chip Chop, quiero apartar mi alimento para Black Friday")} target="_blank" rel="noopener">
-            <MessageCircle aria-hidden="true" size={20} /> Apartar por WhatsApp
-          </a>
-        </div>
+        <Countdown from={bf.startsAt} to={bf.endsAt} />
+        <a className="btn btn-gold bf-btn" href={waLink("Hola Chip Chop, quiero apartar mi alimento para Black Friday")} target="_blank" rel="noopener">
+          <MessageCircle aria-hidden="true" size={18} /> Apartar
+        </a>
       </div>
     </section>
   );

@@ -19,10 +19,10 @@ function Clock({ label, ms }: { label: string; ms: number }) {
     <div className="countdown">
       <span className="countdown-label">{label}</span>
       <span className="countdown-units">
-        <span><strong>{d}</strong> días</span>
-        <span><strong>{h}</strong> horas</span>
-        <span><strong>{m}</strong> min</span>
-        <span><strong>{String(s).padStart(2, "0")}</strong> seg</span>
+        <span><strong>{d}</strong>d</span>
+        <span><strong>{h}</strong>h</span>
+        <span><strong>{m}</strong>m</span>
+        <span><strong>{String(s).padStart(2, "0")}</strong>s</span>
       </span>
     </div>
   );
@@ -35,14 +35,29 @@ export function Countdown({ from, to }: { from: string; to: string }) {
     const t = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(t);
   }, []);
-  if (now === null) return null;
+  // Antes de cargar se dibuja el mismo tamaño con guiones, para que nada se mueva (CLS 0).
+  if (now === null) {
+    return (
+      <div className="countdowns" aria-hidden="true">
+        <div className="countdown">
+          <span className="countdown-label">Termina en</span>
+          <span className="countdown-units">
+            <span><strong>–</strong>d</span>
+            <span><strong>–</strong>h</span>
+            <span><strong>–</strong>m</span>
+            <span><strong>–</strong>s</span>
+          </span>
+        </div>
+      </div>
+    );
+  }
   const start = new Date(from).getTime();
   const end = new Date(to).getTime();
   if (now >= end) return <p className="countdown-done">Black Friday terminó. Gracias por comprar en Chip Chop.</p>;
   return (
     <div className="countdowns" role="timer" aria-live="off">
       {now < start && <Clock label="Empieza en" ms={start - now} />}
-      <Clock label={now < start ? "Termina en" : "Termina en (¡ya empezó!)"} ms={end - now} />
+      <Clock label="Termina en" ms={end - now} />
     </div>
   );
 }
