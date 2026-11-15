@@ -77,6 +77,11 @@ export default function Nosotros() {
             {SITE.instagramHandle}
           </a>
         </li>
+        <li>
+          <a href={SITE.googleBusiness} target="_blank" rel="noopener me">
+            Perfil de Chip Chop Pet Shop en Google
+          </a>
+        </li>
       </ul>
       <p className="updated">Actualizado el 15 de noviembre de 2026.</p>
     </div>

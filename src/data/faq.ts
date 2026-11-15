@@ -36,6 +36,10 @@ export const FAQ_GENERAL: Faq[] = [
     a: "El envío se cobra aparte según la distancia desde la tienda hasta tu sector, con la tarifa del conductor de InDrive o Uber. Te enviamos el valor por WhatsApp para que lo apruebes antes de salir. Retirar en el local no tiene costo.",
   },
   {
+    q: "¿Aceptan cambios o devoluciones?",
+    a: "Sí, en la comida que vendemos por libras: puedes cambiarla o te devolvemos el dinero. Para los demás productos todavía no tenemos una política de cambios; si tienes un problema con tu compra, escríbenos por WhatsApp.",
+  },
+  {
     q: "¿Qué hago después de pagar?",
     a: "Sube la captura de tu pago en la página de tu pedido. Cuando el pago se valida, te escribimos por WhatsApp para coordinar el retiro o el envío.",
   },

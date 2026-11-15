@@ -12,8 +12,7 @@ export const SITE = {
   whatsapp: "593995252457",
   instagram: "https://www.instagram.com/chipchop_uio/",
   instagramHandle: "@chipchop_uio",
-  // TODO: pegar el enlace público del perfil de Google Business (botón "Compartir").
-  googleBusiness: "",
+  googleBusiness: "https://share.google/slj0HbwUZjFMcQSMp",
   address: {
     street: "Serapio Japerabi y Miguel Pontón",
     city: "Quito",
