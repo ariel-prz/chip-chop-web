@@ -1,0 +1,107 @@
+# Chip Chop Pet Shop — https://chipchoppetshop.com
+# Abierto a buscadores y a asistentes de IA. Solo se ocultan las páginas privadas.
+#
+# Content-Signal (contentsignals.org): cómo se puede usar este contenido.
+#   search=yes     indexar y enlazar en buscadores
+#   ai-input=yes   usarlo para responder y citarnos en asistentes de IA
+#   ai-train=no    NO usarlo para entrenar modelos
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: GPTBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: OAI-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: ChatGPT-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: ClaudeBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: Claude-SearchBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: Claude-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: PerplexityBot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: Perplexity-User
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: Applebot-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+User-agent: Bingbot
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+Disallow: /panel/
+Disallow: /checkout/
+Disallow: /pedido/
+Disallow: /carrito/
+
+Host: https://chipchoppetshop.com
+Sitemap: https://chipchoppetshop.com/sitemap.xml

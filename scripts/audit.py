@@ -178,7 +178,8 @@ def main():
             try:
                 data = json.loads(raw)
                 for item in data if isinstance(data, list) else [data]:
-                    types.append(item.get("@type"))
+                    t = item.get("@type")
+                    types.extend(t if isinstance(t, list) else [t])
             except Exception:
                 pass
         flag = "PRIV" if private else ("OK " if not out else "!! ")

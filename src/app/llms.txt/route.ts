@@ -35,6 +35,10 @@ ${BLACK_FRIDAY.active ? `## Promoción vigente\n- ${BLACK_FRIDAY.title}: ${BLACK
 - [Consejos de Caramelo (blog)](${SITE.url}/consejos-de-caramelo/)
 - [Seguros para mascotas en Ecuador: tipos y opciones](${SITE.url}/seguros-para-mascotas/) (guía informativa; Chip Chop no vende seguros)
 - [Quiénes somos](${SITE.url}/nosotros/)
+- [Contacto](${SITE.url}/contacto/)
+- [Términos y condiciones](${SITE.url}/terminos/)
+- [Catálogo en JSON para agentes](${SITE.url}/catalogo.json)
+- [MCP Server Card](${SITE.url}/.well-known/mcp/server-card.json)
 
 ## Productos
 ${products}

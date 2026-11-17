@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/gen-md.mjs out",
     "start": "next start",
     "audit": "python3 scripts/audit.py out",
     "sync:sql": "node scripts/products-sql.mjs"
@@ -22,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "node-html-markdown": "^2.0.0",
     "typescript": "^5"
   }
 }

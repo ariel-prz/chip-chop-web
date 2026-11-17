@@ -9,7 +9,7 @@ export function businessSchema() {
   const sameAs = [SITE.instagram, SITE.googleBusiness].filter(Boolean);
   return {
     "@context": "https://schema.org",
-    "@type": "PetStore",
+    "@type": ["LocalBusiness", "PetStore"],
     "@id": BIZ_ID,
     name: SITE.name,
     description: SITE.description,
@@ -116,6 +116,20 @@ export function productSchema(p: Product) {
       seller: { "@id": BIZ_ID },
       availableAtOrFrom: { "@id": BIZ_ID },
     },
+  };
+}
+
+// Lista de productos con precio y moneda, para que un agente lea precios sin JavaScript.
+export function productListSchema(products: Product[], name: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    numberOfItems: products.length,
+    itemListElement: products.map((p, i) => {
+      const { "@context": _c, ...prod } = productSchema(p) as Record<string, unknown>;
+      return { "@type": "ListItem", position: i + 1, item: prod };
+    }),
   };
 }
 

@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/consejos-de-caramelo/", 0.7),
     ...POSTS.map((p) => page(`/consejos-de-caramelo/${p.slug}/`, 0.6)),
     page("/nosotros/", 0.6),
+    page("/contacto/", 0.6),
+    page("/terminos/", 0.3),
     page("/privacidad/", 0.3),
   ];
 }

@@ -99,6 +99,35 @@ Ecuador intermediar seguros requiere licencia). Proveedores solo con fuente veri
 sitios oficiales llevan `utm_source=chipchoppetshop` para demostrar tráfico si se negocia un convenio.
 Sin precios en la página: cambian seguido y los medios no siempre están al día.
 
+## Capa para agentes de IA (17 nov 2026)
+
+Pensada para que un agente lea, cite y opere el sitio sin ejecutar JavaScript.
+
+- **`public/robots.txt` es un archivo estático** (ya no `app/robots.ts`, que no permite directivas
+  propias). Lleva `Content-Signal: search=yes, ai-input=yes, ai-train=no` en cada grupo: se permite
+  indexar y citar, no entrenar.
+- **`/catalogo.json`**: catálogo completo con precios y promoción vigente (`app/catalogo.json/route.ts`).
+  Es la fuente que usan las herramientas MCP y WebMCP; se regenera en cada build.
+- **Markdown por negociación de contenido**: `scripts/gen-md.mjs` corre después de `next build`
+  (ya está en `npm run build`) y escribe `index.md` junto a cada `index.html` pública. El
+  `.htaccess` lo sirve cuando el `Accept` incluye `text/markdown`. La portada pasa de 223 KB de
+  HTML a 12 KB de Markdown.
+- **Cabeceras `Link` (RFC 8288)** en todo HTML: `llms.txt`, `catalogo.json` y la MCP Server Card;
+  en la portada se añade el alternate de `index.md`. Además cada página declara su Markdown con
+  `<link rel="alternate" type="text/markdown">` desde `pageMeta`.
+- **MCP Server Card** en `public/.well-known/mcp/server-card.json`.
+- **Servidor MCP real**: Edge Function `mcp` en Supabase (`supabase/functions/mcp/index.ts`),
+  `verify_jwt: false`, en `https://yhyquywkowydbonbphov.supabase.co/functions/v1/mcp`.
+  JSON-RPC 2.0, spec 2025-06-18, solo lectura: `buscar_productos`, `consultar_envio`, `info_tienda`.
+  Lee `/catalogo.json`, así que al cambiar el catálogo no hay que volver a desplegarlo.
+- **WebMCP** (`src/components/WebMCP.tsx`): registra esas mismas tres herramientas con
+  `navigator.modelContext.registerTool()` si el navegador lo soporta. No importa el catálogo:
+  lo descarga al usarse, para no engordar el bundle.
+- **Schema**: el nodo del negocio es `["LocalBusiness", "PetStore"]` (los validadores buscan el
+  nombre literal) y la portada publica un `ItemList` de `Product`/`Offer` con precio y moneda.
+- **Páginas institucionales enlazadas desde el pie** (y por tanto desde la portada): `/nosotros/`,
+  `/contacto/`, `/terminos/` y `/privacidad/`.
+
 ## Reglas de contenido
 
 - Nunca inventar precios, cifras, reseñas, años, políticas ni datos de productos. Si falta un dato,

@@ -1,0 +1,48 @@
+{
+  "name": "chipchop-petshop",
+  "title": "Chip Chop Pet Shop",
+  "version": "1.0.0",
+  "description": "Servidor MCP de solo lectura de Chip Chop Pet Shop, tienda de mascotas en Quito, Ecuador. Permite buscar productos con precios en USD, consultar costos de envío por sector e informarse sobre la tienda.",
+  "websiteUrl": "https://chipchoppetshop.com",
+  "documentation": "https://chipchoppetshop.com/llms.txt",
+  "protocolVersion": "2025-06-18",
+  "endpoint": "https://yhyquywkowydbonbphov.supabase.co/functions/v1/mcp",
+  "transport": "streamable-http",
+  "authentication": { "type": "none" },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://yhyquywkowydbonbphov.supabase.co/functions/v1/mcp"
+    }
+  ],
+  "capabilities": {
+    "tools": { "listChanged": false },
+    "resources": false,
+    "prompts": false,
+    "sampling": false
+  },
+  "tools": [
+    {
+      "name": "buscar_productos",
+      "description": "Busca productos del catálogo por texto, especie o categoría. Devuelve nombre, presentación, precio en USD, promoción vigente y URL de la ficha."
+    },
+    {
+      "name": "consultar_envio",
+      "description": "Costo de envío desde la tienda a un sector de Quito (norte, centro, sur, valles) o retiro en el local."
+    },
+    {
+      "name": "info_tienda",
+      "description": "Dirección, horario, WhatsApp, formas de pago y de entrega."
+    }
+  ],
+  "dataSources": {
+    "catalog": "https://chipchoppetshop.com/catalogo.json",
+    "summary": "https://chipchoppetshop.com/llms.txt"
+  },
+  "contact": {
+    "organization": "Chip Chop Pet Shop",
+    "url": "https://chipchoppetshop.com/contacto/",
+    "whatsapp": "+593995252457"
+  },
+  "license": "Solo lectura. Uso permitido para responder y citar a la tienda; no para entrenar modelos (ver /robots.txt, Content-Signal)."
+}

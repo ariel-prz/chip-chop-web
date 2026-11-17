@@ -15,7 +15,7 @@ export function pageMeta(opts: {
   return {
     title: opts.title,
     description: opts.description,
-    alternates: { canonical: url },
+    alternates: { canonical: url, types: { "text/markdown": `${url}index.md` } },
     robots: opts.noindex ? { index: false, follow: false } : { index: true, follow: true },
     openGraph: {
       type: "website",

@@ -5,6 +5,8 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # /.well-known/ siempre accesible (MCP Server Card)
+  RewriteRule ^\.well-known/ - [L]
   # Forzar HTTPS
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
@@ -12,6 +14,32 @@ ErrorDocument 404 /404.html
   # Quitar www (una sola URL canónica)
   RewriteCond %{HTTP_HOST} ^www\.chipchoppetshop\.com$ [NC]
   RewriteRule ^ https://chipchoppetshop.com%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# --- Agentes: Markdown por negociación de contenido ---
+AddType text/markdown .md
+AddCharset utf-8 .md
+
+<IfModule mod_rewrite.c>
+  # Accept: text/markdown devuelve la versión .md de la misma ruta
+  RewriteCond %{HTTP:Accept} text/markdown [NC]
+  RewriteCond %{REQUEST_URI} !\.md$
+  RewriteCond %{DOCUMENT_ROOT}/$1index.md -f
+  RewriteRule ^(.*)$ /$1index.md [L]
+  # Marca la portada para la cabecera Link de su Markdown
+  RewriteRule ^$ - [E=HOMEPAGE:1]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # RFC 8288: recursos para agentes (llms.txt, catálogo JSON y MCP Server Card)
+  <FilesMatch "\.html$">
+    Header always set Link "</llms.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"llms.txt\", </catalogo.json>; rel=\"alternate\"; type=\"application/json\"; title=\"Catalogo JSON\", </.well-known/mcp/server-card.json>; rel=\"service-desc\"; type=\"application/json\"; title=\"MCP Server Card\""
+    Header always append Link "</index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Markdown\"" env=HOMEPAGE
+  </FilesMatch>
+  <FilesMatch "\.md$">
+    Header always set Content-Type "text/markdown; charset=utf-8"
+    Header always set X-Robots-Tag "noindex"
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_headers.c>

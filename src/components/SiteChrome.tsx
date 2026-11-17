@@ -103,6 +103,7 @@ export function Footer() {
             <li><Link href="/como-comprar/">Cómo comprar y pagar con Deuna</Link></li>
             <li><Link href="/envios/">Envíos en Quito y los Valles</Link></li>
             <li><Link href="/preguntas-frecuentes/">Preguntas frecuentes</Link></li>
+            <li><Link href="/contacto/">Contacto</Link></li>
             <li><Link href="/seguros-para-mascotas/">Seguros para mascotas en Ecuador</Link></li>
           </ul>
         </section>
@@ -111,6 +112,7 @@ export function Footer() {
           <ul>
             <li><Link href="/nosotros/">Quiénes somos</Link></li>
             <li><Link href="/consejos-de-caramelo/">Consejos de Caramelo</Link></li>
+            <li><Link href="/terminos/">Términos y condiciones</Link></li>
             <li><Link href="/privacidad/">Política de privacidad</Link></li>
             <li>
               <a href={SITE.instagram} rel="noopener me" target="_blank">

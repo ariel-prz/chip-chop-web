@@ -8,13 +8,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { FAQ_GENERAL } from "@/data/faq";
 import { PRODUCTS, productsBySpecies, SPECIES_LABEL, thumbOf, type Species } from "@/data/products";
 import { pageMeta } from "@/lib/meta";
-import { faqSchema } from "@/lib/schema";
+import { faqSchema, productListSchema } from "@/lib/schema";
 import { SHIPPING_SUMMARY, SITE, STORE_PHOTOS, fullAddress, mapsLink, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Chip Chop Pet Shop | Tienda de mascotas en Quito con envío",
   description:
-    "Alimento, snacks y accesorios para perros y gatos en Quito. Compra en línea, paga con Deuna y retira en tienda o recibe en Norte, Centro, Sur y Valles.",
+    "Alimento, snacks y accesorios para perros, gatos, conejos y peces en Quito. Compra en línea, paga con Deuna y retira en tienda o recibe en tu casa.",
   path: "/",
 });
 
@@ -27,6 +27,7 @@ export default function Home() {
   return (
     <>
       <JsonLd data={faqSchema(HOME_FAQ)} />
+      <JsonLd data={productListSchema([...featured, ...dry].slice(0, 12), "Productos destacados de Chip Chop Pet Shop")} />
 
       <section className="hero2">
         <div className="wrap hero2-grid">

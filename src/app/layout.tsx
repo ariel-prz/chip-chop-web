@@ -4,6 +4,7 @@ import "./globals.css";
 import { CartProvider } from "@/components/Cart";
 import { Footer, Header, WhatsAppFab } from "@/components/SiteChrome";
 import { MobileTabBar } from "@/components/Engage";
+import { WebMCP } from "@/components/WebMCP";
 import { JsonLd } from "@/components/JsonLd";
 import { businessSchema, websiteSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <WhatsAppFab />
           <MobileTabBar />
+          <WebMCP />
         </CartProvider>
       </body>
     </html>
