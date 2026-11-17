@@ -9,7 +9,7 @@ import { FAQ_GENERAL } from "@/data/faq";
 import { PRODUCTS, productsBySpecies, SPECIES_LABEL, thumbOf, type Species } from "@/data/products";
 import { pageMeta } from "@/lib/meta";
 import { faqSchema, productListSchema } from "@/lib/schema";
-import { SHIPPING_SUMMARY, SITE, STORE_PHOTOS, fullAddress, mapsLink, waLink } from "@/lib/site";
+import { GOOGLE_RATING, SHIPPING_SUMMARY, SITE, STORE_PHOTOS, fullAddress, mapsLink, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Chip Chop Pet Shop | Tienda de mascotas en Quito con envío",
@@ -205,6 +205,13 @@ export default function Home() {
           <p>
             Chip Chop es un negocio familiar de Quito. Nos atiende la misma familia que te recibe en el local, y{" "}
             {SITE.mascot}, el perro que recibe el abrazo en nuestro logo, es la mascota de la tienda.
+          </p>
+          <p className="rating">
+            <strong>{GOOGLE_RATING.value.toFixed(1).replace(".", ",")} de 5</strong> en {GOOGLE_RATING.count} reseñas de
+            Google, al {GOOGLE_RATING.checkedOn}.{" "}
+            <a href={SITE.googleBusiness} target="_blank" rel="noopener">
+              Leerlas en Google
+            </a>
           </p>
           <p>
             <Link href="/nosotros/">Conoce la historia de Chip Chop</Link>

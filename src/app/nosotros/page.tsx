@@ -3,7 +3,7 @@ import { Breadcrumbs } from "@/components/Blocks";
 import { JsonLd } from "@/components/JsonLd";
 import { PRODUCTS } from "@/data/products";
 import { pageMeta } from "@/lib/meta";
-import { SITE, STORE_PHOTOS, fullAddress, mapsLink, waLink } from "@/lib/site";
+import { GOOGLE_RATING, SITE, STORE_PHOTOS, fullAddress, mapsLink, waLink } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Quiénes somos | Chip Chop Pet Shop, tienda familiar en Quito",
@@ -91,6 +91,22 @@ export default function Nosotros() {
         En <Link href="/consejos-de-caramelo/">Consejos de Caramelo</Link>, nuestro blog, respondemos las preguntas
         que más nos hacen en el local sobre alimentación, agua y antiparasitarios.
       </p>
+      <h2>¿Qué dicen los clientes?</h2>
+      <p className="rating">
+        <strong>
+          {GOOGLE_RATING.value.toFixed(1).replace(".", ",")} de 5
+        </strong>{" "}
+        en {GOOGLE_RATING.count} reseñas del perfil de Google de la tienda, al {GOOGLE_RATING.checkedOn}.
+      </p>
+      <p>
+        <a className="btn btn-secondary" href={SITE.googleBusiness} target="_blank" rel="noopener">
+          Leer las reseñas en Google
+        </a>
+      </p>
+      <p className="hint">
+        ¿Nos compraste? Déjanos tu reseña en ese mismo perfil: nos ayuda a que otras familias de Quito nos encuentren.
+      </p>
+
       <h2>¿Cómo contactarnos?</h2>
       <ul>
         <li>

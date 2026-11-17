@@ -44,6 +44,10 @@ export const STORE_PHOTOS = [
   { file: "fachada-chip-chop-pet-shop-quito", alt: "Fachada de Chip Chop Pet Shop en Serapio Japerabi y Miguel Pontón, Quito" },
 ] as const;
 
+// Calificación pública del perfil de Google, verificada a mano en la fecha indicada.
+// Actualizar solo con el dato real; nunca estimarlo.
+export const GOOGLE_RATING = { value: 5.0, count: 4, checkedOn: "17 de noviembre de 2026" };
+
 export const GEO = { lat: -0.2565227, lng: -78.5344705 };
 
 
